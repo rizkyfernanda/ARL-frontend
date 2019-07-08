@@ -1,0 +1,264 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+body {
+	scroll-behavior: smooth;
+	font-family: lato;
+}
+
+header {
+	text-align: center;
+	padding: 0px;
+}
+
+h2 {
+	padding-left: 5%;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #02003B;
+}
+
+.header-font {
+	font-size: 300%;
+	background-color: rgba(255,255,255,0.80);
+}
+
+.header-sub-font {
+	font-size: 200%;
+	background-color: rgba(255,255,255,0.50);
+}
+
+.navbar {
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(148,148,148,0.8);
+	-moz-box-shadow: 0px 1px 4px 0px rgba(148,148,148,0.8);
+	box-shadow: 0px 1px 4px 0px rgba(148,148,148,0.8);
+}
+
+.navbar-brand {
+	color: rgba(25,37,78,0.91);
+	font-weight: 340;
+}
+
+
+.nav-item{
+	padding-right: 10px;
+	font-weight: light;
+	font-size: 80%;
+}
+
+.nav-language {
+	border-style: solid;
+	border-width: thin;
+	border-color: #CCCCCC;
+	border-radius: 10%;
+}
+
+.nav-link {
+	color:rgba(0,0,0,0.7);
+}
+
+.table-active {
+	background-color: white;
+	font-weight: 1000;
+}
+
+.nav-link:hover {
+	color:rgba(55,83,159,0.96);
+	font-weight:1000;
+}
+
+
+.dropdown-menu {
+	background-color: rgba(55,83,159,0.96);
+	border-style: none;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.dropdown-item {
+	font-size: 90%;
+	font-weight: normal;
+	color: white;
+	padding: 7px;
+}
+
+.dropdown-divider {
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+.dropdown-menu .nav-link:hover {
+	background-color: hotpink;
+}
+
+.dropdown .nav-item {
+	color: hotpink;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.header {
+	padding: 22.5%;
+	padding-top:21%;
+	padding-bottom:22%;
+}
+
+.jumbotron {
+	margin: 0px;
+	width: 100%;
+	border-radius: 0px;
+}
+
+.btn-layanan {
+	padding-left: 10%;
+	padding-right: 10%;
+	font-weight: bold;
+	color: #1F1F47;
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+}
+
+.analisis .eksperimen {
+	border-radius: 0px;
+	padding: 10%;
+}
+
+.analisis {
+	background-color: rgba(55,83,159,0.87);
+	color: white;
+}
+
+.eksperimen {
+	background-color: rgba(0,3,46,0.77);
+	color: white;
+}
+
+
+
+.card-text {
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.kegiatan {
+	padding: 4%;
+	padding-left: 2%;
+	padding-right: 6%;
+}
+
+.kegiatan-header {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  line-height: 1.5;
+  font-size: 100%;
+  color: rgba(0,0,0,0.90);
+}
+
+.isi-peralatan {
+	padding: 2%;
+	padding-bottom: 4%;
+}
+
+.col-lg-2 {
+}
+
+.page-footer {
+	margin-top: 3%;
+	background-color:rgba(0,3,46,0.9);
+	color: white;
+    padding-left: 0px;
+	padding-right: 0px;
+}
+
+.footer-copyright {
+	background-color: #1E1E1E;
+	padding-left: 11%;
+}
+
+.card {
+	background-color: #FCFCFC;
+	border-radius: 8px;
+	border-color: #F0F0F0;
+}
+
+/*--------------------------------------*/
+/*Buat Headings*/
+.headings {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+}
+
+.hr {
+  display: block;
+  flex: 1;
+  margin: 0 30px;
+  height: 3px;
+  background: #D4D4D4;
+}
+
+.text-right {
+	padding-right: 0px;
+}
+
+/*--------------------------------------*/
+/*Buat Laboratorium*/
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+.col-xs-6ths {
+}
+.col-xs-6 {
+}
