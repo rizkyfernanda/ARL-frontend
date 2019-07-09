@@ -15,6 +15,9 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 	
+  <!-- Animation styles -->
+  <link href="css/animation.css" rel="stylesheet">
+	
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </head>
@@ -23,24 +26,20 @@
 
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg fixed-top bg-white">
-	  <span class="icon pr-2"><img src="http://placehold.it/35x35" alt=""></span>
-	  <span><a class="navbar-brand" href="index.html">LABORATORIUM RISET UNGGULAN IPB</a></span>
+	  <span class="pr-2" data_temp_dwid="1"><img class="navbar-brand-icon" src="pics/ipb-icon.png" data_temp_dwid="2"></span>
+	  <span data_temp_dwid="3"><a class="navbar-brand" href="index.html" data_temp_dwid="4">LABORATORIUM RISET UNGGULAN IPB</a></span>
 	  
-      <div class="collapse navbar-collapse">
-        <ul class="ml-auto navbar-nav">
+      <div class="collapse navbar-collapse py-0">
+        <ul class="ml-auto navbar-nav py-0">
 		  
 		  
           <li class="nav-item">
-			<a class="nav-link table-active pb-0" href="#">
-			  <img class="icon pb-1" src="http://placehold.it/23x23" alt="">
-			  Home
+			<a class="nav-link table-active">Home
 			</a>
 		  </li>
 		  
 		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			  <img class="icon pb-1" src="http://placehold.it/23x23" alt="">
-			  Profil
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Profil
 			</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
 				  <a class="dropdown-item" href="portfolio-1-col.html">Stuktur Organisasi</a>
@@ -49,9 +48,7 @@
           </li>
 		  
 		  <li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  <img class="icon pb-1" src="http://placehold.it/23x23" alt="">
-				  Lab Kami 
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lab Kami 
 			  </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">			  
               <a class="dropdown-item" href="portfolio-1-col.html">Laboratorium Sains Molekuler</a>
@@ -65,30 +62,33 @@
           </li>
 		  
           <li class="nav-item">
-			  <a class="nav-link" href="services.html">
-				  <img class="icon pr-1 pb-1" src="http://placehold.it/23x23" alt="">
-				  Galeri
+			  <a class="nav-link" href="services.html">Galeri
 			  </a>
 		  </li>
 			
 		  <li class="nav-item">
-			  <a class="nav-link" href="services.html">
-				  <img class="icon pb-1" src="http://placehold.it/23x23" alt="">
-				  Layanan
+			  <a class="nav-link" href="services.html">Layanan
 			  </a>
 		  </li>
 			
           <li class="nav-item"> 
-			  <a class="nav-link" href="contact.html">
-			  	<img class="icon pr-1 pb-1" src="http://placehold.it/23x23" alt="">
-				Kontak
+			  <a class="nav-link" href="contact.html">Kontak
 			  </a>
 		  </li>
 
-		  <li class="nav-item dropdown p-0"><a class="nav-link dropdown-toggle nav-language m-1 py-1" href="#" id="navbarDropdownPortfolio2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ID</a>
+			
+		  <li class="nav-item dropdown p-0"><a class="nav-link dropdown-toggle nav-language" href="#" id="navbarDropdownPortfolio2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ID</a>
 		    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-				<a class="dropdown-item" href="portfolio-1-col.html" data_temp_dwid="1">Bahasa Indonesia</a>
-				<a class="dropdown-item" href="portfolio-2-col.html" data_temp_dwid="2">English (US)</a>
+				
+				<a class="dropdown-item px-3" href="portfolio-1-col.html" data_temp_dwid="1">
+					<img class="d-inline align-middle" src="pics/idn.png">
+					<div class="d-inline align-middle"> &nbsp; Bahasa Indonesia</div>
+				</a>
+				
+				<a class="dropdown-item px-3" href="portfolio-1-col.html" data_temp_dwid="1">
+					<img class="d-inline align-middle" src="pics/us.png">
+					<div class="d-inline align-middle"> &nbsp; English (US)</div>
+				</a>
 			</div>
           </li>
 			
@@ -96,50 +96,67 @@
       </div>
   </nav>
 	
-	
-	
-	
-  <header>
-		  <div class="jumbotron header">
-		    <h1 class="header-font py-2">Laboratorium Riset Unggulan</h1>
-		    <p class="header-sub-font font-weight-light">Institut Pertanian Bogor</p>
-		  </div>
-  </header>
+<div class="container-fluid">
+  <div class="row header">
+		<div id="carouselExampleSlidesOnly" class="carousel slide w-100" data-ride="carousel">
+			  <div class="carousel-inner w-100">
+				<div class="carousel-item active">
+				  <img class="d-block w-100" src="http://placehold.it/1920x1080" alt="First slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="http://placehold.it/1280x720" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="http://placehold.it/853x480" alt="Third slide">
+				</div>
+			  </div>
+	    </div>
+		<div class="main-text hidden-xs w-100 h-100">
+                <div class="text-center">
+					<h3 class="header-font animated fadeInUp">
+						Laboratorium Riset Unggulan
+					</h3>
+					<h4 class="header-sub-font animated fadeInUp">
+						Institut Pertanian Bogor
+					</h4>
+                </div>
+        </div>  
+    </div>
+ 
 
   <!-- Page Content -->
-  <div class="container-fluid">
 	  
 	<!-- Layanan -->
 	<div class="row">
-	  <div class="col-lg-6 col-sm-12 d-flex eksperimen">
+	  <div class="col-lg-6 col-sm-12 eksperimen">
 				
 		<div class="row">
-			  <div class="col-lg-8 p-5 pr-0">
+		  <div class="col-lg-7 col-sm-7 col-xs-5 pl-5 pr-0 py-4 col-xl-8">
 					<h2 class="p-0 font-weight-bolder">Layanan Eksperimen</h2>
 					<p>KIik untuk mengajukan kegiatan eksperimen dengan mengunjungi laboratorioum kami. </p>
-					<button type="button" class="btn btn-layanan btn-light">Ajukan Layanan</button>
+					<button type="button" class="btn btn-layanan btn-light mt-3">Ajukan Layanan</button>
+		  </div>
+			  <div class="col-lg-5 col-sm-4 col-xs-4 col-xl-4 pl-0">
+				  	<img class="eksperimen-icon" src="pics/icon-eksperimen.png">
 			  </div>
-			  <div class="col-lg-4">
-				  	<!-- logo -->
-			  </div>
-			</div>
+		</div>
 </div>
 		
 	    <div class="col-lg-6 col-sm-12 analisis">
 				
 			<div class="row">
-			  <div class="col-lg-8 p-5 pr-0">
+			  <div class="col-lg-7 col-sm-7 col-xs-7 pr-0 py-4 col-xl-8 pl-5">
 					<h2 class="p-0 font-weight-bolder">Layanan Analisis</h2>
 					<p>Kirimkan sampel Anda untuk kami analisa dengan teknologi riset kami.<br>
 			    </p>
-					<button type="button" class="btn btn-light btn-layanan">Ajukan Layanan</button>
+					<button type="button" class="btn btn-light btn-layanan  mt-3">Ajukan Layanan</button>
 			  </div>
-			  <div class="col-lg-4">
-				  <!-- logo -->
+			  <div class="col-lg-5 col-sm-5 col-xs-5 offset-xl-0 col-xl-4 pl-0">
+				  	<img class="analisis-icon" src="pics/icon-analisis.png">
 			  </div>
-			</div>
+		  </div>
 			
-		 </div>
+	  </div>
 	</div>
 	
 	
@@ -153,37 +170,44 @@
 		</div>
 		  
 		<div class="row">
-		  <div class="col-lg-4 mb-4">
+			
+			
+		  <div class="col-lg-4 col-sm-12 col-xs-12 mb-4">
 			<div class="card h-100">
 			  <img class="card-img-top" src="http://placehold.it/400x300" alt="">
 			  <div class="card-body">
 				<h4>Peneliti IPB Dilatih Terampil dalam mengoperasikan mesin PCR dan ABI 3500</h4>
 				<p class="card-text">Staf pengajar dan peneliti Institut Pertanian Bogor (IPB) dari Fakultas Pertanian (Faperta), Fakultas Perikanan dan Ilmu Kelautan (FP1K), Fakultas Kehutanan (Fahutan) dan Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA) mendapatkan pelatihan mengoperasikan mesin ABI Proflex dan ABI 3500 Genetic Analyzer yang mutakhir. Pelatihan inl digelar oleh Unit Laboratorium Riset Unggulan di Kampus IPB Dramaga, Bogor.</p>
 			  </div>
+			  <a href="#!" class="stretched-link"></a>
 			</div>
 		  </div>
-		  <div class="col-lg-4 mb-4">
+			
+		  <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
 			<div class="card h-100">
 			  <img class="card-img-top" src="http://placehold.it/400x300" alt="">
 			  <div class="card-body">
 				<h4>IPB Tingkatkan Kemampuan Penelitinya di Bidang Nano Imaging</h4>
 				<p class="card-text">Advanced Research Laboratory (Unit Riset Unggulan), Lembaga Penelitian dan Pengabdian kepada Masyarakat (LPPM), Institut Pertanian Bogor (IPB) bekerjasama dengan PT. Vanadia Utama menggelar Workshop bertajuk “Advance Technology in Laser Scanning Microscope and Its Application for Life Science” di Gedung Unit Laboratorium Riset Unggulan (Advance Research Laboratory), Kampus IPB Dramaga, Bogor.</p>
 			  </div>
+			  <a href="#" class="stretched-link"></a>
 			</div>
 		  </div>
-		  <div class="col-lg-4 mb-4">
+			
+			
+		  <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
 			<div class="card h-100">
 			  <img class="card-img-top" src="http://placehold.it/400x300" alt="">
 			  <div class="card-body">
 				<h4>IPB Gelar Workshop Teknis Pengolahan Jurnal Gunakan Open Journal Systems (OJS)</h4>
 				<p class="card-text">Bagi dunia akademis jurnal merupakan salah satu indikator penting dalam perkembangan keilmuan. Publikasi hasil-hasil penelitian dibutuhkan tidak hanya untuk konsumsi komunitas akademik, namun lebih dari itu untuk masyarakat dan pengambil kebijakan. Publikasi sebagai salah satu bentuk laporan dan presentasi hasil penelitian.</p>
 			  </div>
+			  <a href="#" class="stretched-link"></a>
         </div>
-		<div class=" row text-right py-2">
-			selengkapnya
-		</div>
+
       </div>
 </div>
+		<div class="row float-right pr-5"><a class="selengkapnya" href="#">Berita lainnya&nbsp; &nbsp; &gt;</a></div>
     	<!-- /.row -->
 		  
 	</div>
@@ -220,7 +244,10 @@
 			    <p class="card-text">02 Januari 2019</p>
 			  </div>
 		  </div>
-		</div>
+		  <div class="row kegiatan float-right pr-5">
+			  <a class="selengkapnya" href="#">Selengkapnya ></a>
+		  </div>
+	  </div>
 		  
 	</div>
 	
@@ -229,85 +256,120 @@
 			<span class="hr"></span>
     </div>
 	  
-    <div class="row isi-peralatan pt-3 pb-5">
-      <div class="col-lg-3 col-sm-6 portfolio-item">
+    <div class="row isi-peralatan pt-3 pb-3">
+      <div class="col-md-5ths col-xs-6">
 
-		  	<div class="card h-100 card-link">
+		  	<div class="card h-100">
               <img class="card-img-top" src="http://placehold.it/300x300" alt="">
-			  <div class="card-body">
+			  <div class="card-body pb-0">
 				<h4 class="card-title"> Phytotron High-Specification Growth Chamber</h4>
 				  <p><i>Laboratorium Environmental Monitoring</i></p>
 			  </div>
+			  <a href="#!" class="stretched-link"></a>
 			</div>
       </div>
-      <div class="col-lg-3 col-sm-6 portfolio-item">
+		
+      <div class="col-md-5ths col-xs-6">
         <div class="card h-100">
           <img class="card-img-top" src="http://placehold.it/300x300" alt="">
-          <div class="card-body">
+          <div class="card-body pb-0">
             <h4>Nano Photometer and Cuvette UV -VIS Spectrophotometer</h4>
             <p><em>Laboratorium Sains Molekuler</em></p>
           </div>
+		  <a href="#!" class="stretched-link"></a>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-6 portfolio-item">
+		
+		
+      <div class="col-md-5ths col-xs-6 portfolio-item">
         <div class="card h-100">
          <img class="card-img-top" src="http://placehold.it/300x300" alt="">
-          <div class="card-body">
+          <div class="card-body pb-0">
             <h4 class="card-title">NovoCyte Flow Cytometer </h4>
 			  <p><em>Laboratorium Sains Molekuler</em></p>
           </div>
+		  <a href="#!" class="stretched-link"></a>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-6 portfolio-item">
+		
+		
+      <div class="col-md-5ths col-xs-6">
         <div class="card h-100">
           <img class="card-img-top" src="http://placehold.it/300x300" alt="">
-          <div class="card-body">
+          <div class="card-body pb-0">
             <h4 class="card-title">Liquid Chromatography Mass Spectrometer (LC MS/MS)</h4>
             <p><em>Laboratorium Metabolomik</em></p>
           </div>
+		  <a href="#!" class="stretched-link"></a>
         </div>
       </div>
+		
+		
+	  <div class="col-md-5ths col-xs-6">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/300x300" alt="">
+          <div class="card-body pb-0">
+            <h4 class="card-title">Liquid Chromatography Mass Spectrometer (LC MS/MS)</h4>
+            <p><em>Laboratorium Metabolomik</em></p>
+          </div>
+	      <a href="#!" class="stretched-link"></a>
+        </div>
+      </div>
+		
 </div>
+	  <div class="row">
+    	<div class="col-lg-12  pr-5"><a class="selengkapnya float-right pr-5" href="#">Lihat lainnya&nbsp; &nbsp;&gt;</a></div>
+    </div>
     <!-- /.row -->
-	  
+	 
+	<div class="row pt-5">
 	<div class="headings px-5">
 			<h2 class="p-0">Laboratorium Kami</h2>
 			<span class="hr"></span>
     </div>
+	</div>
 	  
 	<div class="row isi-peralatan">
+		
       <div class="col-md-5ths col-xs-6">
         <div class="card h-100">
           <img class="card-img-top" src="http://placehold.it/400x300" alt="">
           <div class="card-body">
             <h4>Laboratorium Sains Molekuler</h4>
           </div>
+		  <a href="#!" class="stretched-link"></a>
         </div>
       </div>
+		
+		
       <div class="col-md-5ths col-xs-6ths">
         <div class="card h-100">
           <img class="card-img-top" src="http://placehold.it/400x300" alt="">
           <div class="card-body">
             <h4> Laboratorium Metabolomik </h4>
           </div>
+		  <a href="#!" class="stretched-link"></a>
         </div>
       </div>
+		
       <div class="col-md-5ths">
         <div class="card h-100">
           <img class="card-img-top" src="http://placehold.it/400x300" alt="">
           <div class="card-body">
             <h4 class="card-title">Laboratorium Nano Imaging</h4>
           </div>
+		  <a href="#!" class="stretched-link"></a>
         </div>
       </div>
+		
       <div class="col-md-5ths col-xs-6ths">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/400x300" alt=""></a>
+          <img class="card-img-top" src="http://placehold.it/400x300" alt="">
           <div class="card-body">
             <h4> Laboratorium Environmental Monitoring</h4>
           </div>
+		  <a href="#!" class="stretched-link"></a>
         </div>
-		
 		
       </div>
       <div class="col-md-5ths col-xs-6ths">
@@ -315,6 +377,7 @@
           <div class="card-body">
             <h4 class="card-title"> Laboratorium Kultur Sel Hewan</h4>
           </div>
+		  <a href="#!" class="stretched-link"></a>
         </div>
       </div>
 <!-- Features Section -->
@@ -333,14 +396,21 @@
 	  <div class="container text-center text-md-left">
 
 		<!-- Grid row -->
-		<div class="row px-5">
+		<div class="row">
 
 		  <!-- Grid column -->
-		  <div class="col-md-4 mr-auto my-md-4 my-0 mt-4 mb-1 col-lg-4">
+		  <div class="col-md-4 mr-auto col-lg-4 my-4 pr-5">
 
 			<!-- Content -->
-			<h5 class="font-weight-bolder mb-4">Hubungi Kami</h5>
-			<ul class="list-unstyled font-weight-light">
+			<button class= "btn btn-light mb-4 hubungi-kami px-4">
+				<img class="d-inline align-middle" src="pics/layanan-icon.png">
+				<div class="d-inline align-middle">Hubungi Kami</div>
+			</button>
+			  
+			  <ul class="list-unstyled font-weight-light">
+			  <li>
+			    <p><img class="lab-riset-unggulan" src="pics/lab-riset-unggulan.png"></p>
+			  </li>
 			  <li>
 			    <p>Email: advanced-lab@apps.ipb.ac.id</p>
 			  </li>
@@ -350,6 +420,10 @@
 			  <li>
 			    <p>Kode Pos: 16680</p>
 			  </li>
+			  <li>
+				<img class="icon" src="pics/Instagram.png">
+				<a class="d-inline align-middle footer-tautan font-weight-bold" href="#!">@advancedresearchlab</a>
+			  </li>
 			</ul>
 		  </div>
 		  <!-- Grid column -->
@@ -357,19 +431,19 @@
 		  <hr class="clearfix w-100 d-md-none">
 
 		  <!-- Grid column -->
-		  <div class="col-md-2 mx-auto my-md-4 my-0 mt-4 mb-1 col-lg-3">
+		  <div class="col-md-2 mx-auto my-md-4 my-0 mt-4 mb-1 pr-5 col-lg-3 offset-xl-0 col-xl-3">
 
 			<!-- Links -->
-			<h5 class="font-weight-bolder mb-4">Tautan</h5>
+			<h5 class="font-weight-bolder text-justify mb-4 py-2">Tautan</h5>
 			<ul class="list-unstyled font-weight-light">
 			  <li>
-			    <p><a href="#!">IPB</a></p>
+			    <p><a class="footer-tautan" href="#!">IPB</a></p>
 			  </li>
 			  <li>
-			    <p> <a href="#!">Lembaga Penelitian dan Pengembangan Masyarakat - IPB</a></p>
+			    <p> <a class="footer-tautan" href="#!">Lembaga Penelitian dan Pengembangan Masyarakat - IPB</a></p>
 			  </li>
 			  <li>
-			    <p> <a href="#!">Direktorat Administrasi Pendidikan - IPB</a></p>
+			    <p> <a class="footer-tautan" href="#!">Direktorat Administrasi Pendidikan - IPB</a></p>
 			  </li>
 			</ul>
 
@@ -387,23 +461,8 @@
 		  <div class="col-md-2 text-center mx-auto my-4 offset-lg-0 col-lg-5">
 
 			<!-- Social buttons -->
-			<h5 class="font-weight-bolder mb-4 text-justify">Lokasi Kami</h5>
-			<!-- Facebook -->
-			<a type="button" class="btn-floating btn-fb">
-			  <i class="fab fa-facebook-f"></i>
-			</a>
-			<!-- Twitter -->
-			<a type="button" class="btn-floating btn-tw">
-			  <i class="fab fa-twitter"></i>
-			</a>
-			<!-- Google +-->
-			<a type="button" class="btn-floating btn-gplus">
-			  <i class="fab fa-google-plus-g"></i>
-			</a>
-			<!-- Dribbble -->
-			<a type="button" class="btn-floating btn-dribbble">
-			  <i class="fab fa-dribbble"></i>
-			</a>
+			<h5 class="font-weight-bolder text-justify mb-4 py-2">Lokasi Kami</h5>
+			<div id="map"></div>
 
 		  </div>
 		  <!-- Grid column -->
@@ -423,8 +482,10 @@
 <!-- Footer -->
 	  
   <!-- Bootstrap core JavaScript -->
+  <script src="js/lab-riset.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
