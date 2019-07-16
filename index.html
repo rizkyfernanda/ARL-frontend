@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Modern Business - Start Bootstrap Template</title>
+  <title>Laboratorium Riset Unggulan IPB</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,16 +18,20 @@
   <!-- Animation styles -->
   <link href="css/animation.css" rel="stylesheet">
 	
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--Custom Javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/lab-riset.js"></script>
 
 </head>
 
-<body>
+<body id="home">
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg fixed-top bg-white">
-	  <span class="pr-2" data_temp_dwid="1"><img class="navbar-brand-icon" src="pics/ipb-icon.png" data_temp_dwid="2"></span>
-	  <span data_temp_dwid="3"><a class="navbar-brand" href="index.html" data_temp_dwid="4">LABORATORIUM RISET UNGGULAN IPB</a></span>
+  <nav class="navbar navbar-expand-lg fixed-top bg-white" id="navbar-home">
+	  <a href="index.html">
+		 <span class="pr-2"><img class="navbar-brand-icon align-middle" src="pics/ipb-icon.png"></span>
+		 <span class="navbar-brand align-middle">LABORATORIUM RISET UNGGULAN IPB</span>
+      </a>
 	  
       <div class="collapse navbar-collapse py-0">
         <ul class="ml-auto navbar-nav py-0">
@@ -77,7 +81,7 @@
 		  </li>
 
 			
-		  <li class="nav-item dropdown p-0"><a class="nav-link dropdown-toggle nav-language" href="#" id="navbarDropdownPortfolio2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ID</a>
+		  <li class="nav-item dropdown p-0"><a class="nav-link dropdown-toggle nav-language" href="#!" id="navbarDropdownPortfolio2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ID</a>
 		    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
 				
 				<a class="dropdown-item px-3" href="portfolio-1-col.html" data_temp_dwid="1">
@@ -356,6 +360,7 @@
         <div class="card h-100">
           <img class="card-img-top" src="http://placehold.it/400x300" alt="">
           <div class="card-body">
+			<!-- Optic -->
             <h4 class="card-title">Laboratorium Nano Imaging</h4>
           </div>
 		  <a href="#!" class="stretched-link"></a>
@@ -402,9 +407,13 @@
 		  <div class="col-md-6 mr-auto col-lg-4 col-sm-6 col-xs-12 my-4 pr-5">
 
 			<!-- Content -->
-			<button class= "btn btn-light mb-4 hubungi-kami px-4">
-				<img class="d-inline align-middle" src="pics/layanan-icon.png">
-				<div class="d-inline align-middle">Hubungi Kami</div>
+			  
+			<!-- Tombol Hubungi Kami -->
+			<button class= "btn btn-light mb-4 hubungi-kami">
+				<a href="contact.html">
+					<img class="d-inline align-middle" src="pics/layanan-icon.png">
+					<div class="d-inline align-middle">Hubungi Kami</div>
+				</a>
 			</button>
 			  
 			  <ul class="list-unstyled font-weight-light">
@@ -437,13 +446,13 @@
 			<h5 class="font-weight-bolder text-justify col-sm-6 col-xs-6 mb-4 py-2 px-0">Tautan</h5>
 			<ul class="list-unstyled font-weight-light">
 			  <li>
-			    <p><a class="footer-tautan" href="#!">IPB</a></p>
+			    <p><a class="footer-tautan" href="http://ipb.ac.id">IPB</a></p>
 			  </li>
 			  <li>
-			    <p> <a class="footer-tautan" href="#!">Lembaga Penelitian dan Pengembangan Masyarakat - IPB</a></p>
+			    <p> <a class="footer-tautan" href="http://lppm.ipb.ac.id/">Lembaga Penelitian dan Pengembangan Masyarakat - IPB</a></p>
 			  </li>
 			  <li>
-			    <p> <a class="footer-tautan" href="#!">Direktorat Administrasi Pendidikan - IPB</a></p>
+			    <p> <a class="footer-tautan" href="http://ditap.ipb.ac.id/">Direktorat Administrasi Pendidikan - IPB</a></p>
 			  </li>
 			</ul>
 
@@ -482,10 +491,10 @@
 <!-- Footer -->
 	  
   <!-- Bootstrap core JavaScript -->
-  <script src="js/lab-riset.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
-  <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+	
 </body>
 
 </html>
