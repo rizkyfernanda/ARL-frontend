@@ -4,8 +4,9 @@ $(document).ready(function(){
   	// Select all links with hashes
 	$('a[href*="#"]')
 	  // Remove links that don't actually link to anything
-	  .not('carousel-control-next')
-	  .not('carousel-control-prev')
+	  .not('.header')
+	  .not('.carousel-control-next')
+	  .not('.carousel-control-prev')
 	  .click(function(event) {
 	    // On-page links
 	    if (
