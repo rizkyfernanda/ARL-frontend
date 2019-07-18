@@ -15,134 +15,494 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+	
+  <!-- Animation styles -->
+  <link href="css/animation.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!--Custom Javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/labRiset.js"></script>
+  <script src="js/layanan.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Blog
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-              <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-              <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Other Pages
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-              <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-              <a class="dropdown-item" href="faq.html">FAQ</a>
-              <a class="dropdown-item" href="404.html">404</a>
-              <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<div class="fixed-top navbar-expand-lg">
+  <nav class="bg-white navbar">
+		  <a href="index.html">
+			 <span class="pr-2"><img class="navbar-brand-icon align-middle" src="pics/ipb-icon.png"></span>
+			 <span class="navbar-brand align-middle">LABORATORIUM RISET UNGGULAN IPB</span>
+		  </a>
 
+		 <div class="collapse navbar-collapse py-0">
+			<ul class="ml-auto navbar-nav py-0">
+
+
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html">Home
+				</a>
+			  </li>
+
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Profil
+				</a>
+					<div class="dropdown-menu dropdown-menu-right fadeInDown" aria-labelledby="navbarDropdownPortfolio">
+					  <a class="dropdown-item" href="portfolio-1-col.html">Stuktur Organisasi</a>
+					  <a class="dropdown-item" href="portfolio-2-col.html">Tentang Kami</a>
+				</div>
+			  </li>
+
+			  <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lab Kami 
+				  </a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">			  
+				  <a class="dropdown-item" href="portfolio-1-col.html">Laboratorium Sains Molekuler</a>
+				  <a class="dropdown-item" href="portfolio-2-col.html">Laboratorium Metabolomik</a>
+				  <a class="dropdown-item" href="portfolio-1-col.html">Laboratorium Nano Imaging</a>
+				  <a class="dropdown-item" href="portfolio-2-col.html">Laboratorium Environmental Monitoring</a>
+				  <a class="dropdown-item" href="portfolio-2-col.html">Laboratorium Kultur Sel Hewan</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item font-weight-bolder" href="portfolio-2-col.html">Peralatan Kami</a>
+				</div>
+			  </li>
+
+			  <li class="nav-item">
+				  <a class="nav-link" href="services.html">Galeri
+				  </a>
+			  </li>
+
+			  <li class="nav-item">
+				  <a class="nav-link table-active">Layanan
+				  </a>
+			  </li>
+
+			  <li class="nav-item"> 
+				  <a class="nav-link" href="contact.html">Kontak
+				  </a>
+			  </li>
+
+
+			  <li class="nav-item dropdown p-0"><a class="nav-link dropdown-toggle nav-language" href="#" id="navbarDropdownPortfolio2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ID</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+
+					<a class="dropdown-item px-3" href="portfolio-1-col.html" data_temp_dwid="1">
+						<img class="d-inline align-middle" src="pics/idn.png">
+						<div class="d-inline align-middle"> &nbsp; Bahasa Indonesia</div>
+					</a>
+
+					<a class="dropdown-item px-3" href="portfolio-1-col.html" data_temp_dwid="1">
+						<img class="d-inline align-middle" src="pics/us.png">
+						<div class="d-inline align-middle"> &nbsp; English (US)</div>
+					</a>
+				</div>
+			  </li>
+
+			</ul>
+    </div>
+   </nav>
+   <ol class="breadcrumb">
+     <li class="breadcrumb-item">
+       <a href="index.html">Home</a>
+     </li>
+       <li class="breadcrumb-item active">Layanan</li>
+     </ol>
+  </div>	
   <!-- Page Content -->
-  <div class="container">
+  <div class="container-fluid pl-4 pr-5 min-vh-100">
+  <div class="row">
+	  
+    <!--Kolom 1: Pilihan dan tata cara -->
+	<div class="col-md-8 pr-3">
+		
+	  	<!-- Pilihan -->
+		<div class="row">
+			
+			<div class="col-md-12 pl-5 headings">
+				<h4 class="my-4">Anda Memilih...</h4>
+				<span class="hr"></span>
+			</div>
+			
+		</div>
+			
+	    <div class="row">
+				<div class="col-md-6">
+					<button id="eksperimen" class="btn btn-light w-100">
+						
+						<div class="row">
+						  <div class="col-md-8">
+									<h4 class="font-weight-bolder">Layanan Eksperimen</h4>
+									<p class="small">KIik untuk mengajukan kegiatan eksperimen dengan mengunjungi laboratorioum kami. </p>
+						  </div>
+						  <div class="col-md-4">
+									<img class="eksperimen-icon" src="pics/icon-eksperimen.png">
+						  </div>
+							
+						</div>
+						
+					</button>
+				</div>
+			
+				<div class="col-md-6">
+					<button id="analisis" class="btn btn-light w-100 h-100">
+						
+						<div class="row">
+						  <div class="col-md-8">
+						    <h4 class="font-weight-bolder">Layanan Analisis</h4>
+						    <p class="small">Kirimkan sampel Anda untuk kami analisa dengan teknologi riset kami.</p>
+						  </div>
+						  <div class="col-md-4">
+									<img class="eksperimen-icon" src="pics/icon-analisis.png">
+						  </div>
+							
+						</div>
+						
+					</button>
+				</div>
+		</div>
+	    <!-- /.Pilihan -->
+		
+		<!-- Heading Tata Cara -->
+	    <div id="tatacara" class="row animated fadeInDown">
+			<div class="col-md-12 mt-4 pl-5 headings">
+			  <h4 class="my-4">
+				  Tata Cara Pelayanan 
+				  <span class="tatacaraEksperimen">Eksperimen</span>
+				  <span class="tatacaraAnalisis">Analisis</span>
+			  </h4>
+			  <span class="hr"></span>
+			</div>
+		</div>
+	    <!-- /.Heading Tata Cara -->
+		
+	    <!-- Layanan analisis -->
+		<div class="tatacaraAnalisis w-100 animated fadeInDown">		
 
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Services
-      <small>Subheading</small>
-    </h1>
+			<div class="row pb-4">
+				
+				<!--Step 1-->
+				<div class="col-md-6">
+					<div class="card card-body">
+						Step 1
+					</div>
+				</div>
+				
+				
+				<!--Step 2-->
+				<div class="col-md-6">
+					<div class="card card-body">
+						Step 2
+					</div>
+				</div>
+				
+		    </div>
+			
+			<div class="row pb-4">
+				
+				<!--Step 3-->
+				<div class="col">
+					<div class="card card-body">
+						Step 3
+					</div>
+				</div>
+				
+		    </div>
+			
+			<div class="row pb-4">
+				
+				<!--Step 4-->
+			  	<div class="col-md-6">
+					<div class="card card-body"> Step 4</div>
+				</div>
+				
+				
+				<!--Step 5-->
+				<div class="col-md-6">
+					<div class="card card-body"> Step 5</div>
+				</div>
+				
+		    </div>
+			
+			<div class="row pb-4">
+				
+				<!--Step 6-->
+			  	<div class="col-md-6">
+					<div class="card card-body"> Step 6</div>
+				</div>
+				
+				
+				<!--Step 7-->
+				<div class="col-md-6">
+					<div class="card card-body"> Step 7</div>
+				</div>
+				
+		    </div>
+			
+		</div>
+	    <!-- /.analisis -->
+	  
+	  	<!-- Layanan eksperimen -->
+	  <div class="tatacaraEksperimen w-100 animated fadeInDown">		
 
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="breadcrumb-item active">Services</li>
-    </ol>
-
-    <!-- Image Header -->
-    <img class="img-fluid rounded mb-4" src="http://placehold.it/1200x300" alt="">
-
-    <!-- Marketing Icons Section -->
-    <div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row -->
-
+			<div class="row pb-4">
+				
+				<!--Step 1-->
+				<div class="col-md-6">
+					<div class="card card-body">
+						Step 1
+					</div>
+				</div>
+				
+				
+				<!--Step 2-->
+				<div class="col-md-6">
+					<div class="card card-body">
+						Step 2
+					</div>
+				</div>
+				
+		    </div>
+			
+			<div class="row pb-4">
+				
+				<!--Step 3-->
+				<div class="col">
+					<div class="card card-body">
+						Step 3
+					</div>
+				</div>
+				
+		    </div>
+			
+			<div class="row pb-4">
+				
+				<!--Step 4-->
+			  	<div class="col-md-6">
+					<div class="card card-body"> Step 4</div>
+				</div>
+				
+				
+				<!--Step 5-->
+				<div class="col-md-6">
+					<div class="card card-body"> Step 5</div>
+				</div>
+				
+		    </div>
+</div>
+  	    <!-- /.eksperimen -->
+		
+	</div>  
+	<!--/.Pilihan dan tata cara -->
+	  
+	
+	<!--Kolom 2: Ajukan Disini -->
+	<div id="ajukanDisini" class="col-md-4 px-3 table-bordered animated fadeInDown">
+			
+		<div class="row">
+			<div class="col-md-12 headings pl-4">
+				<h4 class="my-4">Ajukan disini</h4>
+				<span class="hr"></span>
+			</div>
+	    </div>
+		
+		<div class="row pb-4 px-4">
+			<select id="andaAdalah" class="browser-default custom-select">
+			  <option selected disabled value="0">Anda adalah...</option>
+			  <option value="1">Mahasiswa IPB</option>
+			  <option value="2">Dosen IPB</option>
+			  <option value="3">Peneliti AR-LAB</option>
+			  <option value="4">Peneliti luar IPB - Mitra IPB</option>
+		      <option value="5">Peneliti luar IPB - Non Mitra IPB</option>
+			</select>
+			<div id="test"></div>
+			<div id="test2"></div>
+		</div>
+		
+	<!--Yang IPB -->
+	<div class="dariIPB dariARLAB row px-2 mb-4 animated fadeInUp">
+		
+		<!-- Form IPB -->
+		<form class="w-100 card">
+		  <h6 class="card-title">Login dengan akun IPB Anda</h6>
+		  <div class="control-group form-group">
+				<div class="row controls">
+					 
+					 <!-- Username -->
+					 <input type="username" class="form-control mb-3" id="username" placeholder="Username" required/>
+					 
+					 <!-- Password -->
+					 <input type="password" class="form-control mb-3" id="password" placeholder="Password" required/>
+					
+				</div>
+			  
+			</div>
+			<!-- Submit -->
+			<button type="submit" class="btn btn-primary mx-auto w-50">Login</button>
+			
+		</form>
+		<!-- /.Form IPB -->
+		
+	</div>
+	<!--/.Yang IPB -->
+	  
+	<!--Yang Non-IPB-->
+	<div class="dariNonIPB row px-2 pb-4 animated fadeInUp">
+		<form class="card w-100">
+		  <h6 class="card-title">Isi Identitas Anda</h6>
+		  <div class="control-group form-group">
+				<div class="row controls">
+					 
+					 <!-- Nama -->
+					 <input type="name" class="form-control mb-3" id="namaLengkap" placeholder="Nama Lengkap" required/>
+					 
+					 <!-- Email -->
+					 <input type="email" class="form-control mb-3" id="email" placeholder="Email" required/>
+					
+					 <!-- Nomor HP -->
+					 <input type="tel" class="form-control mb-3" id="nomorHP" placeholder="Nomor HP"  required/>
+					
+					 <!-- Nama Institusi -->
+					 <input type="text" class="form-control mb-3" id="namaInstitusi" placeholder="Nama Institusi" required/>
+					
+					 <!-- Jenis Institusi -->
+					 <select class="browser-default custom-select form-control mb-3" required>
+						  <option selected disabled>Jenis Institusi</option>
+						  <option value="Lembaga Pendidikan">Lembaga Pendidikan</option>
+						  <option value="Lembaga Penelitian">Lembaga Penelitian</option>
+						  <option value="Industri/Swasta">Industri / Swasta</option>
+						  <option value="Pribadi">Pribadi</option>
+					 </select>
+			</div>	
+			</div>
+			<!-- Submit -->
+			<button type="submit" class="btn btn-primary mx-auto w-50">Lanjutkan &nbsp; &gt;</button>
+		</form>
+	</div>
+    <!--/.Yang Non-IPB -->
+	  
+	<!-- Attention Card -->
+    <div class="row px-2 pb-4">
+		<div class="w-100 attention animated fadeInUp">
+			<div class= "card-body px-3">
+				<span class="MahasiswaEksperimen text-danger font-italic">Untuk mahasiswa, layanan eksperimen hanya untuk tingkat S2 dan S3.<br></span>
+				Setelah <span class="dariIPB dariARLAB">log in</span>
+				        <span class="dariNonIPB">melanjutkan</span>, 
+				Anda akan diarahkan ke form penelitian. Siapkan:
+				<ul>
+					<li>Soft copy proposal penelitian</li>
+					<li class="dariIPB">Soft copy surat pengantar dari Kepala Departemen</li>
+					<li class="dariNonIPB">Soft copy surat pengantar dari institusi</li>
+				</ul>
+			</div>
+	    </div>
+	</div>
+    <!-- /.Attention Card-->
+		
+	</div>
+	<!--/.Anda Adalah -->
+	
+	
+  </div>
+  <!-- /.row -->
+	  
   </div>
   <!-- /.container -->
+	
+	<!-- Footer -->
+	<footer class="page-footer font-small mdb-color lighten-3">
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+	  <!-- Footer Links -->
+	  <div class="container text-center text-md-left pb-5">
+
+		<!-- Grid row -->
+		<div class="row pb-4">
+
+		  <!-- Grid column -->
+		  <div class="col-md-6 mr-auto col-lg-4 col-sm-6 col-xs-12 my-4 pr-5">
+
+			<!-- Content -->
+			  
+			<!-- Tombol Hubungi Kami -->
+			<button class= "btn btn-light mb-4 hubungi-kami">
+				<a href="contact.html">
+					<img class="d-inline align-middle" src="pics/layanan-icon.png">
+					<div class="d-inline align-middle">Hubungi Kami</div>
+				</a>
+			</button>
+			  
+			  <ul class="list-unstyled font-weight-light">
+			  <li>
+			    <p><img class="lab-riset-unggulan" src="pics/lab-riset-unggulan.png"></p>
+			  </li>
+			  <li>
+			    <p>Email: advanced-lab@apps.ipb.ac.id</p>
+			  </li>
+			  <li>
+			    <p>Jalan Palem Kampus IPB Dramaga, Bogor</p>
+			  </li>
+			  <li>
+			    <p>Kode Pos: 16680</p>
+			  </li>
+			  <li>
+				<img class="icon" src="pics/Instagram.png">
+				<a class="d-inline align-middle footer-tautan font-weight-bold" href="#!">@advancedresearchlab</a>
+			  </li>
+			</ul>
+		  </div>
+		  <!-- Grid column -->
+
+		  <hr class="clearfix w-100 d-md-none">
+
+		  <!-- Grid column -->
+		  <div class="col-md-6 mx-auto my-md-4 my-0 mt-4 mb-1 pr-5 col-lg-3 offset-xl-0 col-xl-3 col-sm-6 col-xs-12">
+
+			<!-- Links -->
+			<h5 class="font-weight-bolder text-justify col-sm-6 col-xs-6 mb-4 py-2 px-0">Tautan</h5>
+			<ul class="list-unstyled font-weight-light">
+			  <li>
+			    <p><a class="footer-tautan" href="http://ipb.ac.id">IPB</a></p>
+			  </li>
+			  <li>
+			    <p> <a class="footer-tautan" href="http://lppm.ipb.ac.id/">Lembaga Penelitian dan Pengembangan Masyarakat - IPB</a></p>
+			  </li>
+			</ul>
+
+		  </div>
+		  <!-- Grid column -->
+
+		  <hr class="clearfix w-100 d-md-none">
+
+		  <!-- Grid column -->
+		  <!-- Grid column -->
+
+		  <hr class="clearfix w-100 d-md-none">
+
+		  <!-- Grid column -->
+		  <div class="col-md-12 text-center mx-auto col-sm-12 col-xs-12 my-4 offset-lg-0 col-lg-5">
+
+			<!-- Social buttons -->
+			<h5 class="font-weight-bolder text-justify mb-4 py-2">Lokasi Kami</h5>
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15854.932604882319!2d106.72330478255614!3d-6.555333609495297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c4b294aba49d%3A0x533530000f77bc38!2sBogor+Agricultural+University!5e0!3m2!1sen!2sid!4v1562741366233!5m2!1sen!2sid" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		  </div>
+		  <!-- Grid column -->
+
+		</div>
+		<!-- Grid row -->
+
+	  </div>
+	  <!-- Footer Links -->
+
+	  <!-- Copyright -->
+	  <div class="footer-copyright py-3 no-gutters font-weight-light card-text">© IPB AR L AB - 2019. All rights reserved.<br>
+	  </div>
+	  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

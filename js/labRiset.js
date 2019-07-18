@@ -43,10 +43,19 @@ $(document).ready(function(){
 	  });
 	
     //----------------For Confirmation--------------------
-	$("#send-success").hide();
 
+    //--1. Open confirmation modal
+	$('#validated-form').on('submit', function(e){
+	  $('#myModal').modal('show');
+	  $("#send-success").hide();
+	  e.preventDefault();
+	});
+
+	//--2. Success
 	$("#send-ok").click(function(){
 	 	$("#send").hide();
    		$("#send-success").show();
+   		e.preventDefault();
   	});
+
 });

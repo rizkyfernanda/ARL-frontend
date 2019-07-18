@@ -13,11 +13,11 @@ body:not(#home) {
 	padding-top: 130px;
 }
 
-a {
+a, btn {
 	transition: 0.5s;
 }
 
-a:hover {
+a:hover, btn:hover {
 	transition: 0.4s;
 }
 
@@ -51,6 +51,10 @@ form {
 	border-radius: 30px;
 	padding: 4%;
 	padding-bottom: 10%;
+}
+
+.carousel-inner {
+	background-color:rgba(204,204,204,1.00);
 }
 
 .carousel-caption {
@@ -95,6 +99,14 @@ form {
 	
 	margin-right: 10%;
 	margin-left: 10%;
+}
+
+label {
+	color:rgba(0,0,0,0.81);
+}
+
+iframe {
+	border-radius: 8px;
 }
 
 .main-text
@@ -212,14 +224,9 @@ form {
 }
 
 
-label {
-	color: rgba(2,0,59,0.70);
-	text-align: right;
-	font-weight: 700;
-}
 
 .form-control {
-	padding-left: 1%;
+	
 }
 
 .controls {
@@ -230,37 +237,11 @@ label {
 	margin: 0px;
 }
 
-.submit {
-	background-color: #00896F;
-	width: 75%;
-	margin-top: 2%;
-	padding-top: 1.5%;
-	padding-bottom: 1.5%;
-	color: rgba(255,255,255,0.90);
-	font-weight: bolder;
-	
-}
-
-.submit:hover {
-	background-color: rgba(41,211,108,1.00);
-	color: white;
-}
-
 .helpBlock {
 	background-color: rgba(255,201,201,0.60);
 	color: rgba(255,0,0,0.60);
 	padding: 0px;
 	width: 100%;
-}
-
-
-
-.form-label {
-	margin-bottom: 0.9%;
-	font-size: 110%;
-	color: #1F365C;
-	
-	
 }
 
 .lab-riset-unggulan {
@@ -345,6 +326,17 @@ label {
 	vertical-align: bottom;
 }
 
+.btn-primary {
+	margin-top: 1em;
+	width: 25%;
+	background-color:rgba(0,114,255,1.00);
+	font-weight: 500;
+}
+
+.submitFinal {
+	float: right;
+}
+
 
 .analisis .eksperimen {
 	padding: 10%;
@@ -374,7 +366,7 @@ label {
 	transition: 0.5s;
 }
 
-.card:hover {
+.card:hover:not(form) {
 	background-color: #F3F3FB;
 	color: black;
 }
@@ -382,6 +374,13 @@ label {
 .card-text {
 	font-size: 14px;
 	line-height: 1.8;
+}
+
+.attention {
+	border-style: solid;
+	border-weight: thick;
+	border-color: rgba(255,128,128,0.85);
+	border-radius: 8px;
 }
 
 .kegiatan {
@@ -415,6 +414,9 @@ label {
 	transition: 0.2s;
 }
 
+.table-bordered {
+	border-radius: 8px;
+}
 .isi-peralatan {
 	padding: 2%;
 	padding-bottom: 4%;
@@ -422,6 +424,7 @@ label {
 
 .col-lg-2 {
 }
+
 
 .page-footer {
 	margin-top: 3%;
@@ -481,12 +484,13 @@ label {
 	padding-top: 5%;
 	margin-bottom: 2%;
 	font-weight: bolder;
-	color: rgba(0,0,0,0.60);
+	color: rgba(66,54,127,1.00);
 	
 	border-style: solid;
 	border-top: none;
 	border-left: none;
 	border-right: none;
+	border-weight: thin;
 	border-color: rgba(0,0,0,0.28);
 }
 

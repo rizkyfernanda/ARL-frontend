@@ -22,7 +22,7 @@
   
   <!--Custom Javascript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/lab-riset.js"></script>
+  <script src="js/labRiset.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
@@ -127,12 +127,12 @@
 	    <div class="col-md-4 mr-auto col-sm-6 col-xs-12 kontak-box">
 			
 			  <!-- Content -->
-			  <div class="row px-5">
-			  <ul class="list-unstyled kontak-info">
+			  <div class="row px-4">
+			  <ul class="list-unstyled kontak-info card">
 			  <li>
-			    <p><img class="lab-riset-unggulan pt-2" src="pics/logo kontak.png"></p>
+			    <p><img class="lab-riset-unggulan" src="pics/logo kontak.png"></p>
 			  </li>
-				  <div class= "pl-4">
+				  <div class= "pl-4 pb-4">
 				  <li>
 					<p>Email: advanced-lab@apps.ipb.ac.id</p>
 				  </li>
@@ -153,19 +153,19 @@
 			<div class="row px-4">
 
 				<!-- Lokasi -->
-				<h4 class="text-justify pl-4 pt-3">Lokasi Kami</h4>
+			  <h4 class="text-justify pl-4 pt-3">Lokasi Kami</h4>
 				  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8159.746491000033!2d106.72255259880299!3d-6.556082024259519!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c4b294aba49d%3A0x533530000f77bc38!2sBogor+Agricultural+University!5e0!3m2!1sen!2sid!4v1562746630100!5m2!1sen!2sid" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 			</div>  
 			  
-		  </div>
+	    </div>
 	  	  <div class="col-md-8">
 			  
 			  
         <!-- -----Message form here------- -->
-        <form id="validated-form" method="post" onsubmit="openModal()">
+        <form id="validated-form" class="card" method="post">
 			
-	    <div class="kirimPesan top mx-4 pl-4">Identitas Anda</div>
+	    <div class="kirimPesan top pl-4">Identitas Anda</div>
 			
           <div class="control-group form-group">
             <div class="row controls">
@@ -229,7 +229,7 @@
             </div>
           </div>
 		  
-		  <div class="pl-4 mx-4 kirimPesan">Pesan Anda</div>
+		  <div class="pl-4 kirimPesan">Pesan Anda</div>
 			
 		  <div class="control-group form-group">
             <div class="row controls">
@@ -260,13 +260,9 @@
 			  ></textarea>
 		    <span class="text-danger" v-if="validationErrors.message" v-text="validationErrors.message"></span> 
 		  </div>
-			  
-			  
-		  <button type="submit" value="Submit" class="btn submit float-right">
-			  Kirim Pesan
-		  </button>
-			
-			</div></form>
+	</div>
+	<button type="submit" onclick="submit" class="btn btn-primary ml-auto mt-4 w-50">Kirim Pesan</button>
+</form>
 			  
 			  
       </div>
@@ -305,8 +301,8 @@
 		  </div>
 
 		  <div class="modal-footer">
-			<button type="button" class="btn btn-primary" data-dismiss="modal">Ubah Form</button>
-			<button id="send-ok" type="button" class="btn btn-success">OK</button>
+			<button type="button" class="btn btn-primary d-inline align-middle" data-dismiss="modal">Ubah Form</button>
+			<button id="send-ok" type="button" class="btn btn-success d-inline align-middle">OK</button>
 		  </div>
 		</div>
 
@@ -332,9 +328,6 @@
 
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	
-  <!-- validation -->
-  <script type="text/javascript" src="js/hubungiKami.js"></script>
 
 </body>
 

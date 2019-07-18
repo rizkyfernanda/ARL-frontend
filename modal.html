@@ -18,7 +18,7 @@
 	
   <!--Custom Javascript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/lab-riset.js"></script>
+  <script src="js/labRiset.js"></script>
 	
 </head>
 
@@ -26,12 +26,12 @@
 	
 <div class="text-center">
 	<!-- Button HTML (to Trigger Modal) -->
-	<a href="#myModal" class="trigger-btn" data-toggle="modal">Click to Open Confirm Modal</a>
+	<button type="submit" onclick="submit" data-toggle="modal">Click to Open Confirm Modal</button>
 </div>
 
 <!-- Modal HTML -->
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+<div id="myModal" class="modal fade" role="dialog" >
   <div id="send" class="modal-dialog modal-confirm">
 
     <!-- Modal content-->
@@ -46,7 +46,7 @@
       </div>
 		
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Ubah Form</button>
+        <button type="button" class="btn btn-primary my-0" data-dismiss="modal">Ubah Form</button>
 		<button id="send-ok" type="button" class="btn btn-success">OK</button>
       </div>
     </div>
