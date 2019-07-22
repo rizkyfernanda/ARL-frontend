@@ -45,17 +45,33 @@ $(document).ready(function(){
     //----------------For Confirmation--------------------
 
     //--1. Open confirmation modal
-	$('#validated-form').on('submit', function(e){
-	  $('#myModal').modal('show');
-	  $("#send-success").hide();
+	$('#formPenelitian , #formKontak').on('submit', function(e){
+	  $('#confirmModal').modal({backdrop: true, keyboard: true});
+	  $('#confirmModal').modal('show');
 	  e.preventDefault();
 	});
 
-	//--2. Success
-	$("#send-ok").click(function(){
-	 	$("#send").hide();
-   		$("#send-success").show();
+	//--2. Harap tunggu
+	$("#send-ok").click(function(e){
+		$('#confirmModal').modal('hide');
+		$('#waitModal').modal({backdrop: "static", keyboard: false});
+		setTimeout(
+ 			function() 
+		  {
+		    $('#waitModal').show();
+		  }, 5000);
+
+	//--3. Success
+	    $('#waitModal').hide();
+		$('#successModal').modal({backdrop: "static", keyboard: false});
+   		$("#successModal").modal('show');
    		e.preventDefault();
   	});
+
+  	//-4. To Home
+  	$("#toHome").click(function(e){
+		window.location.href = "index.html";
+  	});
+
 
 });

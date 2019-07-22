@@ -158,6 +158,10 @@ iframe {
 	box-shadow: 0px 1px 4px 0px rgba(148,148,148,0.8);
 }
 
+.navbar {
+	background-color: white;
+}
+
 .navbar-brand {
 	font-family: varela-round'';
 	color: rgba(31,30,82,0.6);
@@ -296,7 +300,22 @@ iframe {
 }
 
 .bg-white {
-	background-color: white;
+	display: inline-block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem 1.75rem .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	vertical-align: middle;
+	background-color: rgba(0, 0, 0, 0);
+	background-color: #fff;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 .jumbotron {
@@ -313,8 +332,6 @@ iframe {
 	transition: 0.3s;
 }
 
-
-
 .btn-layanan {
 	padding-left: 10%;
 	padding-right: 10%;
@@ -326,30 +343,48 @@ iframe {
 	vertical-align: bottom;
 }
 
-.btn-primary {
+#eksperimen:not(.btn-layanan), .eksperimenCard {
+	background-color: rgba(0,3,46,0.77);
+}
+
+#analisis:not(.btn-layanan), .analisisCard {
+	background-color: rgba(32,121,128,0.92);
+}
+
+.eksperimenCard, .analisisCard, #analisis:not(.btn-layanan), #eksperimen:not(.btn-layanan) {
+	text-align: left;
+	color: white;
+}
+
+.eksperimenCard:hover, .analisisCard:hover {
+	opacity: 0.8;
+	color: white;
+	
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.btn-primary:not(.konfirmasi) {
 	margin-top: 1em;
 	width: 25%;
 	background-color:rgba(0,114,255,1.00);
 	font-weight: 500;
 }
 
-.submitFinal {
-	float: right;
+.indexAnalisis, .indexEksperimen {
+	padding: 1%;
+	padding-top: 0.7%;
+	padding-bottom: 0.7%;
+	color: white;
 }
 
-
-.analisis .eksperimen {
-	padding: 10%;
-}
-
-.analisis {
+.indexAnalisis {
 	background-color: rgba(55,83,159,0.87);
-	color: white;
 }
 
-.eksperimen {
+.indexEksperimen {
 	background-color: rgba(0,3,46,0.77);
-	color: white;
 }
 
 .eksperimen-icon {
@@ -504,6 +539,70 @@ iframe {
 	color:#1F365C;
 }
 
+.tanggal {
+	width: 35%;
+}
+
+.leftForm-border {
+	border-style: solid;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	border-width: 1px;
+	border-color: #ced4da;
+}
+
+.datepicker {
+	font-weight: 380;
+	color: white;
+}
+
+.dow, .datepicker-switch {
+	font-weight: 400;
+}
+
+td:hover, th.next:hover {
+	color: black;
+	transition: 0.09s;
+}
+
+td, th {
+	transition: 0.09s;
+	height: auto;
+}
+
+.bs-placeholder {
+	background-color: white;
+	border-color: #ced4da;
+	border-radius: .25rem;
+}
+
+.bs-placeholder:hover {
+	background-color: #fdFdfd;
+}
+
+.bs-placeholder:focus {
+	background-color: #fdFdfd;
+}
+
+.ajuan {
+	width: 30%;
+	margin: 0 auto;
+	padding: 0.3em;
+	background-color: black;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+}
+
+.ajuan-analisis {
+	background-color: rgba(32,121,128,0.92);
+}
+
+.ajuan-eksperimen {
+	background-color: rgba(0,3,46,0.77);
+}
+
 /*--------------------------------------*/
 /*Buat Laboratorium*/
 .col-xs-5ths,
@@ -566,42 +665,8 @@ iframe {
 .layanan {
 }
 
-/* -----------------Untuk Animasi----------------*/
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 #send-sucess {
 	transition: 0.5s;
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
 }
 
 /*---- Buat Konfirmasi ----*/

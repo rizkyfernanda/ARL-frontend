@@ -31,7 +31,7 @@
 
   <!-- Navigation -->
   <div class="fixed-top navbar-expand-lg">
-	 <nav class="bg-white navbar">
+	 <nav class="navbar">
 		  <a href="index.html">
 			 <span class="pr-2"><img class="navbar-brand-icon align-middle" src="pics/ipb-icon.png"></span>
 			 <span class="navbar-brand align-middle">LABORATORIUM RISET UNGGULAN IPB</span>
@@ -114,7 +114,7 @@
   <!-- Page Content -->
   <div class="container-fluid px-5">
 
-    <!-- Page Heading/Breadcrumbs -->
+    <!-- Page Heading -->
     <div class="headings py-3 pl-5">
       <h2 class="pl-5">Hubungi Kami</h2>
       <span class="hr"></span>
@@ -163,7 +163,7 @@
 			  
 			  
         <!-- -----Message form here------- -->
-        <form id="validated-form" class="card" method="post">
+        <form id="formKontak" class="card" method="post">
 			
 	    <div class="kirimPesan top pl-4">Identitas Anda</div>
 			
@@ -250,12 +250,12 @@
           <div class="control-group form-group">
             <div class="controls">
               <textarea 
-						type="text" class="form-control px-4 py-3" name="message" value="" rows="10" cols="10" required
+						type="text" class="form-control px-4 py-3" name="message" rows="10" cols="10" required
 						
 						placeholder="Pesan Anda akan langsung ternotifikasi oleh staf kami. Cek Email Anda untuk melihat jika terdapat balasan dari kami dengan alamat: advanced-lab@apps.ipb.ac.id"
 						
-						 oninvalid="this.setCustomValidity('Isi pesan Anda)"
- 				         oninput="setCustomValidity('')"
+						oninvalid="this.setCustomValidity('Isi pesan Anda')"
+ 				        oninput="setCustomValidity('')"
 						
 			  ></textarea>
 		    <span class="text-danger" v-if="validationErrors.message" v-text="validationErrors.message"></span> 
@@ -286,7 +286,7 @@
 	
 	<!-- Modal HTML -->
 	<!-- Modal -->
-	<div id="myModal" class="modal fade" role="dialog">
+	<div id="confirmModal" class="modal fade" role="dialog">
 	  <div class="modal-dialog modal-confirm">
 
 		<!-- Modal content-->
@@ -301,10 +301,35 @@
 		  </div>
 
 		  <div class="modal-footer">
-			<button type="button" class="btn btn-primary d-inline align-middle" data-dismiss="modal">Ubah Form</button>
+			<button type="button" class="btn btn-primary konfirmasi d-inline align-middle" data-dismiss="modal">Ubah Form</button>
 			<button id="send-ok" type="button" class="btn btn-success d-inline align-middle">OK</button>
 		  </div>
 		</div>
+
+		</div>
+	</div>
+
+	<!-- Modal HTML -->
+	<!-- Modal -->
+	<div id="waitModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-confirm">
+
+		<!-- Modal content, waiting-->
+		  <div class="modal-header">
+			<h4 class="modal-title text-center">Harap tunggu</h4>
+		  </div>
+
+		  <div class="modal-body">
+			<p>Permintaan Anda sedang diproses</p>
+		  </div>
+
+	  </div>
+	</div>
+
+	<!-- Modal HTML -->
+	<!-- Modal -->
+	<div id="successModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-confirm">
 
 		<!-- Modal content, success-->
 		<div id="send-success" class="modal-content animated fadeIn" data-keyboard="false" data-backdrop="static">
@@ -317,9 +342,32 @@
 		  </div>
 
 		  <div class="modal-footer">
-			<a class="w-100" href="index.html">
-				<button type="button" class="btn btn-primary w-100">Kembali ke beranda</button>
-			</a>
+			<button id="toHome" type="button" class="btn btn-primary w-100">Kembali ke beranda</button>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+
+	<!-- Modal HTML -->
+	<!-- Modal -->
+	<div id="cancelModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-confirm">
+
+		<!-- Modal content-->
+		<div id="send" class="modal-content">
+		  <div class="modal-header">
+			<h4 class="modal-title text-center">Konfirmasi</h4>
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		  </div>
+
+		  <div class="modal-body">
+			<p>Apakah Anda yakin untuk menghentikan form? Semua pengisian akan dihapus.</p>
+		  </div>
+
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary konfirmasi d-inline align-middle" data-dismiss="modal">Batal</button>
+			<button id="cancelOk" type="button" class="btn btn-success d-inline align-middle">OK</button>
 		  </div>
 		</div>
 
@@ -328,6 +376,24 @@
 
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$("a")      
+	     .click(function(e) {
+	     	 if( $("textarea").val() != "" ) {
+	         // To prevent page reload you need .preventDefault()
+		         $('#cancelModal').modal('show');
+			  	 e.preventDefault();
+			 }
+	     });
+
+	  $(".dropdown").click(function(e) {
+	  	e.preventDefault();
+	  	alert("clicked");
+    	});
+
+	 });
+  </script>
 
 </body>
 

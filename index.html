@@ -22,13 +22,14 @@
   <!--Custom Javascript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/lab-riset.js"></script>
+  <script src="js/layanan.js"></script>
 
 </head>
 
 <body id="home">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top bg-white" id="navbar-home">
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar-home">
 	  <a href="index.html">
 		 <span class="pr-2"><img class="navbar-brand-icon align-middle" src="pics/ipb-icon.png"></span>
 		 <span class="navbar-brand align-middle">LABORATORIUM RISET UNGGULAN IPB</span>
@@ -133,13 +134,13 @@
 	  
 	<!-- Layanan -->
 	<div class="row">
-	  <div class="col-lg-6 col-sm-12 eksperimen">
+	  <div class="col-lg-6 col-sm-12 indexEksperimen">
 				
 		<div class="row">
 		  <div class="col-lg-7 col-sm-7 col-xs-5 pl-5 pr-0 py-4 col-xl-8">
 					<h2 class="p-0 font-weight-bolder">Layanan Eksperimen</h2>
 					<p>KIik untuk mengajukan kegiatan eksperimen dengan mengunjungi laboratorioum kami. </p>
-					<button type="button" class="btn btn-layanan btn-light mt-3" data-aos="fade-up">Ajukan Layanan</button>
+					<button type="button" id="eksperimen" class="btn btn-layanan btn-light mt-3" data-aos="fade-up">Ajukan Layanan</button>
 		  </div>
 			  <div class="col-lg-5 col-sm-4 col-xs-4 col-xl-4 pl-0">
 				  	<img class="eksperimen-icon" src="pics/icon-eksperimen.png">
@@ -147,14 +148,14 @@
 		</div>
 </div>
 		
-	    <div class="col-lg-6 col-sm-12 analisis">
+	    <div class="col-lg-6 col-sm-12 indexAnalisis">
 				
 			<div class="row">
 			  <div class="col-lg-7 col-sm-7 col-xs-7 pr-0 py-4 col-xl-8 pl-5">
 					<h2 class="p-0 font-weight-bolder">Layanan Analisis</h2>
 					<p>Kirimkan sampel Anda untuk kami analisa dengan teknologi riset kami.<br>
 			    </p>
-					<button type="button" class="btn btn-light btn-layanan  mt-3" data-aos="fade-up" data-aos-delay="200">Ajukan Layanan</button>
+					<button type="button" id="analisis" class="btn btn-light btn-layanan  mt-3" data-aos="fade-up" data-aos-delay="200">Ajukan Layanan</button>
 			  </div>
 			  <div class="col-lg-5 col-sm-5 col-xs-5 offset-xl-0 col-xl-4 pl-0">
 				  	<img class="analisis-icon" src="pics/icon-analisis.png">
