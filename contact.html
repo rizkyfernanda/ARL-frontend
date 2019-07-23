@@ -378,21 +378,32 @@
   <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript">
   	$(document).ready(function(){
-  		$("a")      
+  		//Konfirmasi untuk menghentikan form dengan meng klik link lain pada page ---------------------------------
+      $( "a" )
 	     .click(function(e) {
-	     	 if( $("textarea").val() != "" ) {
-	         // To prevent page reload you need .preventDefault()
+
+	     	 var link = $( this ).attr('href');  // alamat link yang diklik
+	     	 
+	     	 $("textarea, input").each(function() {
+	     	 	var text_value= $(this).val();
+
+	     	 	// Jika textarea atau input terisi
+				if ( text_value != '') {
+	             e.preventDefault();
+
+	             // Buka Konfirmasi
 		         $('#cancelModal').modal('show');
-			  	 e.preventDefault();
-			 }
+
+		         $("#cancelOk").click(function() {
+		         	window.location.href = link;
+		         });
+		        }
+
+			});
+
 	     });
-
-	  $(".dropdown").click(function(e) {
-	  	e.preventDefault();
-	  	alert("clicked");
-    	});
-
 	 });
+  	
   </script>
 
 </body>
