@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Hubungi Kami - Laboratorium Riset Unggulan IPB</title>
+  <title>Berita - Laboratorium Riset Unggulan IPB</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,7 +83,7 @@
 			  </li>
 
 			  <li class="nav-item">
-				  <a class="nav-link table-active">Layanan
+				  <a class="nav-link" href="layanan.html">Layanan
 				  </a>
 			  </li>
 
@@ -115,183 +115,138 @@
        <li class="breadcrumb-item">
          <a href="index.html">Home</a>
        </li>
-       <li class="breadcrumb-item">
-		 <a href="services.html">Layanan</a>
-	   </li>
-	   <li class="breadcrumb-item active">
-		 Form Penelitian
+       <li class="breadcrumb-item active">
+		 Berita
 	   </li>
      </ol>
   </div>
 	
   <!-- Page Content -->
-  <div class="container-fluid px-5 h-100">
-	  	
-	  	<!-- Profil user -->
-	  	<div id="Profil User" class="card w-75 mx-auto mb-4">
-
-			<div class="row m-4">
-				<div class="col-md-1 m-0 p-0 my-auto">
-					<img class="w-100" src="http://placehold.it/200x200" alt="">
-				</div>
-				<div class="col-md-11">
-					<table style="width:100%; font-size: 90%; opacity: 0.93;">
-						<tr>
-							<td>Nama</td>
-							<td>: Muhammad Rizky Fauzy Fernanda</td>
-
-							<td>Fakultas</td>
-							<td>: FMIPA</td>
-						</tr>
-						<tr>
-							<td>NIM</td>
-							<td>: G64160088</td>
-
-							<td>Program Studi:</td>
-							<td>: Ilmu Komputer</td>
-						</tr>
-						<tr>
-							<td>Email</td>
-							<td>: rizky_fernanda@apps.ipb.ac.id</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-
-	    </div>
-
-
-
-	    <!-- Terbaca jika dipilih "Layanan Analisis" -->
-	    <div class="ajuan ajuan-analisis tatacaraAnalisis">Mengajukan layanan analisis</div>
-
-	    <!-- Terbaca jika dipilih "Layanan Eksperimen" -->
-	    <div class="ajuan ajuan-eksperimen tatacaraEksperimen">Mengajukan layanan eksperimen</div>
-
-
+  <div class="container-fluid min-vh-100">
 	  
-	    <!-- Page Heading -->
-		<div class="headings py-3 pl-2">
-		  <h2 class="pl-5">Form Penelitian</h2>
-		  <span class="hr"></span>
+	  <div class="row px-4">
+	  <div class="col">
+		  
+		<!--Heading-->
+		<div class="headings px-4">
+			<h2 class="my-4 p-0">Berita</h2>
+			<span class="hr"></span>
 		</div>
-	  	
-	  	<!-- Form Content -->
-	  	<form id="formPenelitian" class="card py-2 px-4" method="post">
+		  
+		<!--Kumpulan berita-->
 		<div class="row">
-			<div class="col-md-6 pr-4 py-5">
-				
-			 <div class="form-group">
-				<label for="judulPenelitian">Judul Penelitian</label>
-				<textarea class="form-control" id="isiJudulPenelitian" rows="2" required></textarea>
-			 </div>
-				
-		  	<div class="form-group">
-				<label for="tanggalPenelitian">Tanggal Penelitian (Sesuai Proposal)</label>
-				
-				<div class="row">
-					<div class="col-md-5 pr-0">
-						<input class="form-control" id="tanggalMulai" name="date" placeholder="Tanggal Mulai" type="text" required />
-					</div>
-					<div class="col-md-2 my-auto text-center">s.d.</div>
-					<div class="col-md-5 pl-0">
-						<input class="form-control" id="tanggalSelesai" name="date" placeholder="Tanggal Selesai" type="text" required />
-					</div>
-				</div>
-				
-			 </div>
-				
-			 <div class="form-group">
-				<label for="keperluan">Alat yang diperlukan</label><br>
-				<select class="selectpicker form-control" data-style="btn-light" multiple data-live-search=”true” placeholder="Klik untuk memilih alat" required>
- 
-					<optgroup label="Web">
-					 
-					<option>PHP</option>
-					 
-					<option>CSS</option>
-					 
-					<option>HTML</option>
-					 
-					<option>CSS 3</option>
-					 
-					<option>Bootstrap</option>
-					 
-					<option>JavaScript</option>
-					 
-					</optgroup>
-					 
-					<optgroup label="Programming">
-					 
-					<option>Java</option>
-					 
-					<option>C#</option>
-					 
-					<option>Python</option>
-					 
-					</optgroup>
-					 
-				</select>
-			 </div>
-
-			 <div class="form-group">
-				<label for="keperluan">Keperluan Penelitian</label>
-				<textarea class="form-control" id="keperluanPenelitian" rows="4" required></textarea>
-			 </div>
-				
-		
-			</div>
-
-			<div class="col-md-6 pl-4 py-5 leftForm-border">
-
-			 <!-- Hidden jika "Layanan eksperimen" dipilih -->
-			 <div id="deskripsiSampel" class="form-group">
-				<label for="deskripsiSampel">Deskripsi Sampel</label>
-				<textarea class="form-control" id="deskripsiSampel" rows="4" required></textarea>
-			 </div>
-				
-		  	<div class="form-group">
-				<label for="pesanTambahan">Pesan Tambahan</label>
-				<textarea class="form-control" id="pesanTambahan" placeholder="Opsional" rows="3"></textarea>
-			 </div>
-				
-			<small>
-
-			<div class="form-group">
-				<label for="deskripsiSampel">Proposal Penelitian</label>
-				<div class="input-group w-75">
-				  <div class="custom-file">
-					<input type="file" class="custom-file-input" id="inputGroupFile01"
-					  aria-describedby="inputGroupFileAddon01" required/>
-					<label class="custom-file-label" for="inputGroupFile01">Klik untuk upload file</label>
-				  </div>
-				</div>
-			</div>
 			
-			<div class="form-group">
-				<label for="deskripsiSampel">Surat Pengantar dari Kepala Departemen / dari Instansi</label>
-				<div class="input-group w-75">
-				  <div class="custom-file">
-					<input type="file" class="custom-file-input" id="inputGroupFile02"
-					  aria-describedby="inputGroupFileAddon01" required/>
-					<label class="custom-file-label" for="inputGroupFile01">Klik untuk upload file</label>
-				  </div>
-				</div>
+			
+		  <div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card h-100">
+			  <img class="card-img-top" src="http://placehold.it/400x300" alt="">
+			  <div class="card-body">
+				<h4>Peneliti IPB Dilatih Terampil dalam mengoperasikan mesin PCR dan ABI 3500</h4>
+				<small class="font-weight-lighter font-italic">01 Januari 2019</small>
+				<p class="card-text">Staf pengajar dan peneliti Institut Pertanian Bogor (IPB) dari Fakultas Pertanian (Faperta), Fakultas Perikanan dan Ilmu Kelautan (FPIK), Fakultas Kehutanan (Fahutan) dan Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA) mendapatkan pelatihan mengoperasikan mesin ABI Proflex dan ABI 3500 Genetic Analyzer yang mutakhir. Pelatihan inl digelar oleh Unit Laboratorium Riset Unggulan di Kampus IPB Dramaga, Bogor.</p>
+			  </div>
+			  <a href="#!" class="stretched-link"></a>
 			</div>
-			<br>
-			<div class="form-group">
-				<input type="checkbox" name="checkbox" value="check" id="termsAndCondition" required/> I have read and agree to the 
-				<a href="index.html" id="termsAndCondition" target="_blank" style="color: #353c91; text-decoration: underline;">Terms and Conditions</a>
+		  </div>
+			
+		  <div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card h-100">
+			  <img class="card-img-top" src="http://placehold.it/400x300" alt="">
+			  <div class="card-body">
+				<h4>IPB Tingkatkan Kemampuan Penelitinya di Bidang Nano Imaging</h4>
+				<small class="font-weight-lighter font-italic">01 Januari 2019</small>
+				<p class="card-text">Advanced Research Laboratory (Unit Riset Unggulan), Lembaga Penelitian dan Pengabdian kepada Masyarakat (LPPM), Institut Pertanian Bogor (IPB) bekerjasama dengan PT. Vanadia Utama menggelar Workshop bertajuk “Advance Technology in Laser Scanning Microscope and Its Application for Life Science” di Gedung Unit Laboratorium Riset Unggulan (Advance Research Laboratory), Kampus IPB Dramaga, Bogor.</p>
+			  </div>
+			  <a href="#" class="stretched-link"></a>
 			</div>
+		  </div>
+			
+		  <div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card h-100">
+			  <img class="card-img-top" src="http://placehold.it/400x300" alt="">
+			  <div class="card-body">
+				<h4>IPB Gelar Workshop Teknis Pengolahan Jurnal Gunakan Open Journal Systems (OJS)</h4>
+			    <small class="font-weight-lighter font-italic">01 Januari 2019</small>
+				<p class="card-text">Bagi dunia akademis jurnal merupakan salah satu indikator penting dalam perkembangan keilmuan. Publikasi hasil-hasil penelitian dibutuhkan tidak hanya untuk konsumsi komunitas akademik, namun lebih dari itu untuk masyarakat dan pengambil kebijakan. Publikasi sebagai salah satu bentuk laporan dan presentasi hasil penelitian.</p>
+			  </div>
+			  <a href="#" class="stretched-link"></a>
+        </div>
 
-			</small>
-				
-		<button type="submit" onclick="submit" class="btn btn-primary ml-auto mt-2 w-50">Submit</button>
+      </div>
+			
+		  <div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card h-100">
+			  <img class="card-img-top" src="http://placehold.it/400x300" alt="">
+			  <div class="card-body">
+				<h4>IPB Gelar Workshop Teknis Pengolahan Jurnal Gunakan Open Journal Systems (OJS)</h4>
+			    <small class="font-weight-lighter font-italic">01 Januari 2019</small>
+				<p class="card-text">Bagi dunia akademis jurnal merupakan salah satu indikator penting dalam perkembangan keilmuan. Publikasi hasil-hasil penelitian dibutuhkan tidak hanya untuk konsumsi komunitas akademik, namun lebih dari itu untuk masyarakat dan pengambil kebijakan. Publikasi sebagai salah satu bentuk laporan dan presentasi hasil penelitian.</p>
+			  </div>
+			  <a href="#" class="stretched-link"></a>
+        </div>
+
+      </div>
+</div>
+		
+		<div class="row">
+			
+			
+		  <div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card h-100">
+			  <img class="card-img-top" src="http://placehold.it/400x300" alt="">
+			  <div class="card-body">
+				<h4>Peneliti IPB Dilatih Terampil dalam mengoperasikan mesin PCR dan ABI 3500</h4>
+				<small class="font-weight-lighter font-italic">01 Januari 2019</small>
+				<p class="card-text">Staf pengajar dan peneliti Institut Pertanian Bogor (IPB) dari Fakultas Pertanian (Faperta), Fakultas Perikanan dan Ilmu Kelautan (FPIK), Fakultas Kehutanan (Fahutan) dan Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA) mendapatkan pelatihan mengoperasikan mesin ABI Proflex dan ABI 3500 Genetic Analyzer yang mutakhir. Pelatihan inl digelar oleh Unit Laboratorium Riset Unggulan di Kampus IPB Dramaga, Bogor.</p>
+			  </div>
+			  <a href="#!" class="stretched-link"></a>
+			</div>
+		  </div>
+			
+		  <div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card h-100">
+			  <img class="card-img-top" src="http://placehold.it/400x300" alt="">
+			  <div class="card-body">
+				<h4>IPB Tingkatkan Kemampuan Penelitinya di Bidang Nano Imaging</h4>
+				<small class="font-weight-lighter font-italic">01 Januari 2019</small>
+				<p class="card-text">Advanced Research Laboratory (Unit Riset Unggulan), Lembaga Penelitian dan Pengabdian kepada Masyarakat (LPPM), Institut Pertanian Bogor (IPB) bekerjasama dengan PT. Vanadia Utama menggelar Workshop bertajuk “Advance Technology in Laser Scanning Microscope and Its Application for Life Science” di Gedung Unit Laboratorium Riset Unggulan (Advance Research Laboratory), Kampus IPB Dramaga, Bogor.</p>
+			  </div>
+			  <a href="#" class="stretched-link"></a>
+			</div>
+		  </div>
+			
+		  <div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card h-100">
+			  <img class="card-img-top" src="http://placehold.it/400x300" alt="">
+			  <div class="card-body">
+				<h4>IPB Gelar Workshop Teknis Pengolahan Jurnal Gunakan Open Journal Systems (OJS)</h4>
+			    <small class="font-weight-lighter font-italic">01 Januari 2019</small>
+				<p class="card-text">Bagi dunia akademis jurnal merupakan salah satu indikator penting dalam perkembangan keilmuan. Publikasi hasil-hasil penelitian dibutuhkan tidak hanya untuk konsumsi komunitas akademik, namun lebih dari itu untuk masyarakat dan pengambil kebijakan. Publikasi sebagai salah satu bentuk laporan dan presentasi hasil penelitian.</p>
+			  </div>
+			  <a href="#" class="stretched-link"></a>
+        </div>
+
+      </div>
+			
+		  <div class="col-lg-3 col-sm-6 col-xs-12 mb-4">
+			<div class="card h-100">
+			  <img class="card-img-top" src="http://placehold.it/400x300" alt="">
+			  <div class="card-body">
+				<h4>IPB Gelar Workshop Teknis Pengolahan Jurnal Gunakan Open Journal Systems (OJS)</h4>
+			    <small class="font-weight-lighter font-italic">01 Januari 2019</small>
+				<p class="card-text">Bagi dunia akademis jurnal merupakan salah satu indikator penting dalam perkembangan keilmuan. Publikasi hasil-hasil penelitian dibutuhkan tidak hanya untuk konsumsi komunitas akademik, namun lebih dari itu untuk masyarakat dan pengambil kebijakan. Publikasi sebagai salah satu bentuk laporan dan presentasi hasil penelitian.</p>
+			  </div>
+			  <a href="#" class="stretched-link"></a>
+        </div>
+
+      </div>
+</div>  
+    	<!-- /.row -->
+		  
 	</div>
+		
+		  
 	</div>
-</form>
-	    <!-- /.Form -->
-	
   </div>
   <!-- /.Page Content -->
 

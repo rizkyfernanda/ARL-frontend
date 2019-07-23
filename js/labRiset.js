@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	//----------------For responsive mobile--------------------
+	var viewMode = getCookie("view-mode");
+	if(viewMode == "desktop"){
+	    viewport.setAttribute('content', 'width=1024');
+	}else if (viewMode == "mobile"){
+	    viewport.setAttribute('content', 'width=1024,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+	}
+
 	//----------------For Smooth Scrolling--------------------
   	// Select all links with hashes
 	$('a[href*="#"]')
