@@ -281,7 +281,7 @@
 			<br>
 			<div class="form-group">
 				<input type="checkbox" name="checkbox" value="check" id="termsAndCondition" required/> I have read and agree to the 
-				<a href="index.html" target="_blank" style="color: #353c91; text-decoration: underline;">Terms and Conditions</a>
+				<a href="index.html" id="termsAndCondition" target="_blank" style="color: #353c91; text-decoration: underline;">Terms and Conditions</a>
 			</div>
 
 			</small>
@@ -492,15 +492,17 @@
       $( "a" )
 	     .click(function(e) {
 
-	     	 // alamat link yang diklik
-	     	 var link = $( this ).attr('href');
-
-	     	 // Jika textarea atau input terisi, dan yang diklik bukan terms and conditions
+	     	 var link = $( this ).attr('href');  // alamat link yang diklik
+	     	 var id   = $( this ).attr('id');    // id link
+	     	 
 	     	 $("textarea, input").each(function() {
-	     	 	var text_value=$(this).val();
+	     	 	var text_value= $(this).val();
 
-				if (text_value != '') {
+	     	 	// Jika textarea atau input terisi, dan yang diklik bukan terms and conditions
+				if ( text_value != '' && text_value != "check" && id != "termsAndCondition") {
 	             e.preventDefault();
+
+	             // Buka Konfirmasi
 		         $('#cancelModal').modal('show');
 
 		         $("#cancelOk").click(function() {
