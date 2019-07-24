@@ -365,7 +365,7 @@ iframe {
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
 }
 
-.btn-primary:not(.konfirmasi) {
+.btn-primary:not(.konfirmasi, .btn-deskripsi-jadwal) {
 	margin-top: 1em;
 	width: 25%;
 	background-color:rgba(0,114,255,1.00);

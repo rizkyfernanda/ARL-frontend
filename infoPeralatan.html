@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Kegiatan - Laboratorium Riset Unggulan IPB</title>
+  <title>Info Peralatan - Laboratorium Riset Unggulan IPB</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,7 +16,6 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	
   <!-- Animation styles -->
   <link href="css/animation.css" rel="stylesheet">
@@ -28,15 +27,49 @@
   <script src="js/labRiset.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Bootstrap Multi-select Plugin -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-
   <style>
-  	label {
-  		font-size: 90%;
-  		opacity: 0.8;
-  		padding-left: 0.9em;
+
+  	.card {
+  		width: 90%;
+  	}
+  	.card:hover {
+  		pointer-events:none;
+  	}
+  	.btn {
+  		border-radius: 8px;
+  	}
+  	.btn-deskripsi-jadwal{
+  		width: 49%;
+  		background-color: white !important;
+  		color: #0080C9 !important;
+  		padding-top: 0.7em;
+  		padding-bottom: .7em;
+  		font-weight: bolder;
+  	}
+  	.btn-primary, .btn-primary:hover {
+  		width: 49%;
+  		color: white !important;
+  		background-color: #0080C9 !important;
+  	}
+  	.btn-light:not(.hubungi-kami), .btn-light:hover:not(.hubungi-kami) {
+  		width: 32.5%;
+  		background-color:#f9f9f9;
+  		font-weight: bold;
+  	}
+    .btn-deskripsi-jadwal:hover:not(.btn-primary) {
+  		width: 49%;
+  		color: #777 !important;
+  		background-color: #67C7FF !important;
+  	}
+  	.btn-isi-deskripsi {
+  		width: 32.5%;
+  	}
+  	.btn-isi-deskripsi:focus {
+  		background-color:#f9f9f9;
+  	}
+  	.belum-tersedia {
+  		font-style: italic;
+  		opacity: 0.5;
   	}
   </style>
 
@@ -126,202 +159,76 @@
        <li class="breadcrumb-item">
 		 <a href="index.html">Laboratorium Kami</a>
 	   </li>
+	   <li class="breadcrumb-item">
+		 <a href="peralatanKami.html">Peralatan Kami</a>
+	   </li>
 	   <li class="breadcrumb-item active">
-		 Peralatan Kami
+		 Info Peralatan
 	   </li>
      </ol>
   </div>
 	
   <!-- Page Content -->
-  <div class="container-fluid px-5 h-100">
+  <div class="container-fluid px-5 vh-100">
 
-  	<div class="headings px-5 py-3">
-			<h2 class="p-0 ">Peralatan Kami</h2>
-			<span class="hr"></span>
-    </div>
+  	<div class="row pt-3">
+  		<div class="col-md-4">
 
-    <!-- Search form -->
-	<div class="row px-2 pb-4">
-        <div class="col-md-5">
-        	<label>Cari alat</label>
-            <input type="text" class="form-control" placeholder="Ketik nama alat"/>
-        </div>
+			<div class="card">
+				<div>
+	              	<img class="card-img-top" src="http://placehold.it/500x500" alt="">
+	             </div>         
 
-        <div class="col-md-2"></div>
+	            <div class="card-body pb-0">
+		            <h4 class="card-title">NovoCyte Flow Cytometer </h4>
+					<p><em>Laboratorium Sains Molekuler</em></p>
+	            </div>
+	        </div>
 
-        <div class="col-md-2">
-        	<label>Urutkan dengan</label>
-        	<select id="sortPeralatan" class="browser-default custom-select">
-			  <option value="1">Nama alat</option>
-			  <option value="2">Laboratorium</option>
-			</select>
-        </div>
+  		</div>
 
-        <div class="col-md-3">
-        	<label>Filter</label>
-            <select id="filterPeralatan" title="Filter Laboratorium" class="browser-default custom-select selectpicker form-control" multiple>
-			  <option value="1">Laboratorium Sains Molekuler</option>
-			  <option value="2">Laboratorium Metabolomik</option>
-			  <option value="3">Laboratorium Nano Imaging</option>
-			  <option value="4">Laboratorium Environmental Monitoring</option>
-		      <option value="5">Laboratorium Kultur Sel Hewan</option>
-			</select>
-        </div>
+  		<div class="col-md-8 p-0 m-0">
 
-    </div>
-
-
-    <div class="row isi-peralatan pt-3 pb-3">
-      <div class="col-md-5ths col-xs-6">
-
-		  	<div class="card h-100">
-              <div style="height: 13.1em;">
-              	<img class="card-img-top" src="http://placehold.it/300x300" alt="">
-              </div>
-
-			  <div class="card-body pb-0">
-				<h4 class="card-title"> Phytotron High-Specification Growth Chamber</h4>
-				  <p><i>Laboratorium Environmental Monitoring</i></p>
-			  </div>
-			  <a href="#!" class="stretched-link"></a>
+  			<div class="text-center py-1">
+				<span>
+					<button id="deskripsi" href="#deskripsi" class="btn btn-deskripsi-jadwal">Deskripsi</button>
+					<button id="jadwal" href="#jadwal" class="btn btn-deskripsi-jadwal">Jadwal</button>
+				</span>
 			</div>
-      </div>
-		
-      <div class="col-md-5ths col-xs-6">
-        <div class="card h-100">
-          <div style="height: 13.1em;">
-              	<img class="card-img-top" src="http://placehold.it/300x300" alt="">
-          </div>
 
-          <div class="card-body pb-0">
-            <h4>Nano Photometer and Cuvette UV -VIS Spectrophotometer</h4>
-            <p><em>Laboratorium Sains Molekuler</em></p>
-          </div>
-		  <a href="#!" class="stretched-link"></a>
-        </div>
-      </div>
-		
-		
-      <div class="col-md-5ths col-xs-6 portfolio-item">
-        <div class="card h-100">
-			<div style="height: 13.1em;">
-              	<img class="card-img-top" src="http://placehold.it/300x300" alt="">
-             </div>         
-
-          <div class="card-body pb-0">
-            <h4 class="card-title">NovoCyte Flow Cytometer </h4>
-			  <p><em>Laboratorium Sains Molekuler</em></p>
-          </div>
-		  <a href="infoPeralatan.html" class="stretched-link"></a>
-        </div>
-      </div>
-		
-		
-      <div class="col-md-5ths col-xs-6">
-        <div class="card h-100">
-           <div style="height: 13.1em;">
-              	<img class="card-img-top" src="http://placehold.it/300x300" alt="">
-           </div>
-          <div class="card-body pb-0">
-            <h4 class="card-title">Liquid Chromatography Mass Spectrometer (LC MS/MS)</h4>
-            <p><em>Laboratorium Metabolomik</em></p>
-          </div>
-		  <a href="#!" class="stretched-link"></a>
-        </div>
-      </div>
-		
-		
-	  <div class="col-md-5ths col-xs-6">
-        <div class="card h-100">
-           <div style="height: 13.1em;">
-              	<img class="card-img-top" src="http://placehold.it/300x300" alt="">
-           </div>
-          <div class="card-body pb-0">
-            <h4 class="card-title">Liquid Chromatography Mass Spectrometer (LC MS/MS)</h4>
-            <p><em>Laboratorium Metabolomik</em></p>
-          </div>
-	      <a href="#!" class="stretched-link"></a>
-        </div>
-      </div>	
-
-    </div>  
-
-    <div class="row isi-peralatan pt-3 pb-3">
-      <div class="col-md-5ths col-xs-6">
-
-		  	<div class="card h-100">
-              <div style="height: 13.1em;">
-              	<img class="card-img-top" src="http://placehold.it/300x300" alt="">
-              </div>
-
-			  <div class="card-body pb-0">
-				<h4 class="card-title"> Phytotron High-Specification Growth Chamber</h4>
-				  <p><i>Laboratorium Environmental Monitoring</i></p>
-			  </div>
-			  <a href="#!" class="stretched-link"></a>
+			<div id="buttonDeskripsi" class="text-center py-1">
+			<span>
+				<button id="fitur" class="btn btn-isi-deskripsi">Fitur</button>
+				<button id="aplikasi" class="btn btn-isi-deskripsi">Aplikasi</button>
+				<button id="kegunaan" class="btn btn-isi-deskripsi">Kegunaan</button>
+			</span>
 			</div>
-      </div>
-		
-      <div class="col-md-5ths col-xs-6">
-        <div class="card h-100">
-          <div style="height: 13.1em;">
-              	<img class="card-img-top" src="http://placehold.it/300x300" alt="">
-          </div>
 
-          <div class="card-body pb-0">
-            <h4>Nano Photometer and Cuvette UV -VIS Spectrophotometer</h4>
-            <p><em>Laboratorium Sains Molekuler</em></p>
-          </div>
-		  <a href="#!" class="stretched-link"></a>
-        </div>
-      </div>
-		
-		
-      <div class="col-md-5ths col-xs-6 portfolio-item">
-        <div class="card h-100">
-			<div style="height: 13.1em;">
-              	<img class="card-img-top" src="http://placehold.it/300x300" alt="">
-             </div>         
+			<br>
+			<div id="isi-deskripsi" class="text-justify">
+			<div id="isi-fitur">
+				    <p>Isi fitur</p>
+					<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+		    </div>
 
-          <div class="card-body pb-0">
-            <h4 class="card-title">NovoCyte Flow Cytometer </h4>
-			  <p><em>Laboratorium Sains Molekuler</em></p>
-          </div>
-		  <a href="#!" class="stretched-link"></a>
-        </div>
-      </div>
-		
-		
-      <div class="col-md-5ths col-xs-6">
-        <div class="card h-100">
-           <div style="height: 13.1em;">
-              	<img class="card-img-top" src="http://placehold.it/300x300" alt="">
-           </div>
-          <div class="card-body pb-0">
-            <h4 class="card-title">Liquid Chromatography Mass Spectrometer (LC MS/MS)</h4>
-            <p><em>Laboratorium Metabolomik</em></p>
-          </div>
-		  <a href="#!" class="stretched-link"></a>
-        </div>
-      </div>
-		
-		
-	  <div class="col-md-5ths col-xs-6">
-        <div class="card h-100">
-           <div style="height: 13.1em;">
-              	<img class="card-img-top" src="http://placehold.it/300x300" alt="">
-           </div>
-          <div class="card-body pb-0">
-            <h4 class="card-title">Liquid Chromatography Mass Spectrometer (LC MS/MS)</h4>
-            <p><em>Laboratorium Metabolomik</em></p>
-          </div>
-	      <a href="#!" class="stretched-link"></a>
-        </div>
-      </div>	  
-	
-	</div>
-	  
-  <i class="glyphicon glyphicon-heart"></i>
+		    <div id="isi-aplikasi">
+		    	    <p>Isi aplikasi</p>
+					<p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+		    </div>
+
+		    <div id="isi-kegunaan">
+		    		<p>Isi kegunaan</p>
+					<p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+		    </div>
+		    </div>
+
+		    <div id="isi-jadwal">
+		    		<p class="belum-tersedia">Belum tersedia fitur jadwal.</p>
+		    </div>
+
+  		</div>
+
+  	</div>
 
   </div>
   <!-- /.Page Content -->
@@ -421,7 +328,8 @@
 
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	
+  <script src="js/infoPeralatan.js"></script>
+
 </body>
 
 </html>
