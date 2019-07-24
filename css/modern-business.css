@@ -406,6 +406,11 @@ iframe {
 	color: black;
 }
 
+#deskripsi:hover {
+	background-color: rgba(252,252,252,1.00);
+	color: black;
+}
+
 .card-text {
 	font-size: 14px;
 	line-height: 1.8;
