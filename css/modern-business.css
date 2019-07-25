@@ -66,7 +66,7 @@ form {
 }
 
 .breadcrumb-item {
-	font-weight: 800;
+	font-weight: 670;
 	margin: 0px;
 	padding: 0.4%;
 	color: rgba(15,0,94,0.8);
@@ -77,6 +77,15 @@ form {
 .breadcrumb-item:not(.active):hover {
 	text-decoration: none;
 	background-color: rgba(0,0,0,0.05);
+}
+
+.breadcrumb-item {
+	font-weight: 670;
+	margin: 0px;
+	padding: 0.4%;
+	color: rgba(15,0,94,0.8);
+	border-radius: 5px;
+	transition: 0.1s;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
