@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Form Penelitian - Laboratorium Riset Unggulan IPB</title>
+  <title>Tentang Kami - Laboratorium Riset Unggulan IPB</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,14 +25,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/labRiset.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <!-- Bootstrap Multi-select Plugin -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-	
-  <!-- Bootstrap Date-Picker Plugin -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+   
+  <style>
+	  .isi-kegiatan, .row-horizon {
+	  	overflow-x: scroll;
+		white-space: nowrap;
+	  }
+	  .kegiatan {
+		padding: 1em;
+	  }
+	  .section-kegiatan {
+		width: 25%;
+	  }
+  </style>
 
 </head>
 
@@ -59,16 +64,16 @@
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Profil
 				</a>
 					<div class="dropdown-menu dropdown-menu-right fadeInDown" aria-labelledby="navbarDropdownPortfolio">
-					  <a class="dropdown-item" href="portfolio-1-col.html">Stuktur Organisasi</a>
-					  <a class="dropdown-item" href="portfolio-2-col.html">Tentang Kami</a>
+					<a class="dropdown-item" href="struktur organisasi.html">Stuktur Organisasi</a>
+				  	<a class="dropdown-item" href="tentang kami.html">Tentang Kami</a>
 				</div>
 			  </li>
 
 			  <li class="nav-item dropdown">
 				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lab Kami 
 				  </a>
-				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">			  
-	              <a class="dropdown-item" href="lab.html">Laboratorium Sains Molekuler</a>
+	            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">			  
+	              <a class="dropdown-item active" href="lab.html">Laboratorium Sains Molekuler</a>
 	              <a class="dropdown-item" href="lab.html">Laboratorium Metabolomik</a>
 				  <a class="dropdown-item" href="lab.html">Laboratorium Nano Imaging</a>
 	              <a class="dropdown-item" href="lab.html">Laboratorium Environmental Monitoring</a>
@@ -84,7 +89,7 @@
 			  </li>
 
 			  <li class="nav-item">
-				  <a class="nav-link table-active">Layanan
+				  <a class="nav-link" href="layanan.html">Layanan
 				  </a>
 			  </li>
 
@@ -96,6 +101,7 @@
 
 			  <li class="nav-item dropdown p-0"><a class="nav-link dropdown-toggle nav-language" href="#" id="navbarDropdownPortfolio2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ID</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+
 
 					<a class="dropdown-item px-3" href="portfolio-1-col.html" data_temp_dwid="1">
 						<img class="d-inline align-middle" src="pics/idn.png">
@@ -116,183 +122,35 @@
        <li class="breadcrumb-item">
          <a href="index.html">Home</a>
        </li>
-       <li class="breadcrumb-item">
-		 <a href="services.html">Layanan</a>
-	   </li>
-	   <li class="breadcrumb-item active">
-		 Form Penelitian
+       <li class="breadcrumb-item active">
+		 Kegiatan
 	   </li>
      </ol>
   </div>
 	
   <!-- Page Content -->
-  <div class="container-fluid px-5 h-100">
-	  	
-	  	<!-- Profil user -->
-	  	<div id="Profil User" class="card w-75 mx-auto mb-4">
+  <div class="container vh-100">
 
-			<div class="row m-4">
-				<div class="col-md-1 m-0 p-0 my-auto">
-					<img class="w-100" src="http://placehold.it/200x200" alt="">
-				</div>
-				<div class="col-md-11">
-					<table style="width:100%; font-size: 90%; opacity: 0.93;">
-						<tr>
-							<td>Nama</td>
-							<td>: Muhammad Rizky Fauzy Fernanda</td>
+  	<div class="headings px-5 py-5">
+			<h2 class="p-0 ">Tentang Kami</h2>
+			<span class="hr"></span>
+    </div>
 
-							<td>Fakultas</td>
-							<td>: FMIPA</td>
-						</tr>
-						<tr>
-							<td>NIM</td>
-							<td>: G64160088</td>
-
-							<td>Program Studi:</td>
-							<td>: Ilmu Komputer</td>
-						</tr>
-						<tr>
-							<td>Email</td>
-							<td>: rizky_fernanda@apps.ipb.ac.id</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-
-	    </div>
+    <p class="font-italic text-center"><big>AR-LAB is Our Lab</big></p>
 
 
-
-	    <!-- Terbaca jika dipilih "Layanan Analisis" -->
-	    <div class="ajuan ajuan-analisis tatacaraAnalisis">Mengajukan layanan analisis</div>
-
-	    <!-- Terbaca jika dipilih "Layanan Eksperimen" -->
-	    <div class="ajuan ajuan-eksperimen tatacaraEksperimen">Mengajukan layanan eksperimen</div>
+    <div class="headings px-5 pb-4">
+			<h5 class="p-0 ">Visi</h5>
+			<span class="hr"></span>
+    </div>
 
 
-	  
-	    <!-- Page Heading -->
-		<div class="headings py-3 pl-2">
-		  <h2 class="pl-5">Form Penelitian</h2>
-		  <span class="hr"></span>
-		</div>
-	  	
-	  	<!-- Form Content -->
-	  	<form id="formPenelitian" class="card py-2 px-4" method="post">
-		<div class="row">
-			<div class="col-md-6 pr-4 py-5">
-				
-			 <div class="form-group">
-				<label for="judulPenelitian">Judul Penelitian</label>
-				<textarea class="form-control" id="isiJudulPenelitian" rows="2" required></textarea>
-			 </div>
-				
-		  	<div class="form-group">
-				<label for="tanggalPenelitian">Tanggal Penelitian (Sesuai Proposal)</label>
-				
-				<div class="row">
-					<div class="col-md-5 pr-0">
-						<input class="form-control" id="tanggalMulai" name="date" placeholder="Tanggal Mulai" type="text" required />
-					</div>
-					<div class="col-md-2 my-auto text-center">s.d.</div>
-					<div class="col-md-5 pl-0">
-						<input class="form-control" id="tanggalSelesai" name="date" placeholder="Tanggal Selesai" type="text" required />
-					</div>
-				</div>
-				
-			 </div>
-				
-			 <div class="form-group">
-				<label for="keperluan">Alat yang diperlukan</label><br>
-				<select class="selectpicker form-control" data-style="btn-light" multiple data-live-search=”true” placeholder="Klik untuk memilih alat" required>
- 
-					<optgroup label="Web">
-					 
-					<option>PHP</option>
-					 
-					<option>CSS</option>
-					 
-					<option>HTML</option>
-					 
-					<option>CSS 3</option>
-					 
-					<option>Bootstrap</option>
-					 
-					<option>JavaScript</option>
-					 
-					</optgroup>
-					 
-					<optgroup label="Programming">
-					 
-					<option>Java</option>
-					 
-					<option>C#</option>
-					 
-					<option>Python</option>
-					 
-					</optgroup>
-					 
-				</select>
-			 </div>
+    <div class="headings px-5 pb-4">
+			<h5 class="p-0 ">Misi</h5>
+			<span class="hr"></span>
+    </div>
 
-			 <div class="form-group">
-				<label for="keperluan">Keperluan Penelitian</label>
-				<textarea class="form-control" id="keperluanPenelitian" rows="4" required></textarea>
-			 </div>
-				
-		
-			</div>
 
-			<div class="col-md-6 pl-4 py-5 leftForm-border">
-
-			 <!-- Hidden jika "Layanan eksperimen" dipilih -->
-			 <div id="deskripsiSampel" class="form-group">
-				<label for="deskripsiSampel">Deskripsi Sampel</label>
-				<textarea class="form-control" id="deskripsiSampel" rows="4" required></textarea>
-			 </div>
-				
-		  	<div class="form-group">
-				<label for="pesanTambahan">Pesan Tambahan</label>
-				<textarea class="form-control" id="pesanTambahan" placeholder="Opsional" rows="3"></textarea>
-			 </div>
-				
-			<small>
-
-			<div class="form-group">
-				<label for="deskripsiSampel">Proposal Penelitian</label>
-				<div class="input-group w-75">
-				  <div class="custom-file">
-					<input type="file" class="custom-file-input" id="inputGroupFile01"
-					  aria-describedby="inputGroupFileAddon01" required/>
-					<label class="custom-file-label" for="inputGroupFile01">Klik untuk upload file</label>
-				  </div>
-				</div>
-			</div>
-			
-			<div class="form-group">
-				<label for="deskripsiSampel">Surat Pengantar dari Kepala Departemen / dari Instansi</label>
-				<div class="input-group w-75">
-				  <div class="custom-file">
-					<input type="file" class="custom-file-input" id="inputGroupFile02"
-					  aria-describedby="inputGroupFileAddon01" required/>
-					<label class="custom-file-label" for="inputGroupFile01">Klik untuk upload file</label>
-				  </div>
-				</div>
-			</div>
-			<br>
-			<div class="form-group">
-				<input type="checkbox" name="checkbox" value="check" id="termsAndCondition" required/> I have read and agree to the 
-				<a href="index.html" id="termsAndCondition" target="_blank" style="color: #353c91; text-decoration: underline;">Terms and Conditions</a>
-			</div>
-
-			</small>
-				
-		<button type="submit" onclick="submit" class="btn btn-primary ml-auto mt-2 w-50">Submit</button>
-	</div>
-	</div>
-</form>
-	    <!-- /.Form -->
-	
   </div>
   <!-- /.Page Content -->
 
@@ -464,57 +322,6 @@
 
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	
-  <script>
-    $(document).ready(function(){
-
-      //Untuk format tanggal mulai dan tanggal selesai ----------------------------------------------------
-      var date_input=$('input[name="date"]'); //our date input has the name "date"
-      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-      var options={
-        format: 'dd/mm/yyyy',
-        container: container,
-        todayHighlight: true,
-        autoclose: true,
-      };
-      date_input.datepicker(options);
-
-      $('.custom-file-input').on('change',function(){
-                //get the file name
-                var fileName = $(this).get(0).files.item(0).name;
-                //replace the "Choose a file" label
-                $(this).next('.custom-file-label').text(fileName);
-      });
-
-      //Konfirmasi untuk menghentikan form dengan meng klik link lain pada page ---------------------------------
-      $( "a" )
-	     .click(function(e) {
-
-	     	 var link = $( this ).attr('href');  // alamat link yang diklik
-	     	 var id   = $( this ).attr('id');    // id link
-	     	 
-	     	 $("textarea, input").each(function() {
-	     	 	var text_value= $(this).val();
-
-	     	 	// Jika textarea atau input terisi, dan yang diklik bukan terms and conditions
-				if ( text_value != '' && text_value != "check" && id != "termsAndCondition") {
-	             e.preventDefault();
-
-	             // Buka Konfirmasi
-		         $('#cancelModal').modal('show');
-
-		         $("#cancelOk").click(function() {
-		         	window.location.href = link;
-		         });
-		        }
-
-			});
-
-	     });
-
-	 });
-
-</script>
 
 </body>
 
