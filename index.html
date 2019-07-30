@@ -233,6 +233,7 @@
 			    <p class="card-text">01 Januari 2019</p>
 			  </div>
 		  </div>
+
 		  <div class="row kegiatan">
 			  <div class="col-12 card h100">
 			    <h4 class="kegiatan-header py-1"> Kegiatan 2</h4>
@@ -513,7 +514,10 @@
             items: 3
           }
         }
-      })  
+      });
+      $(".row.kegiatan").click(function() {
+      	window.location.href = "isiKegiatan.html"
+      });
   </script>
 	
 </body>
