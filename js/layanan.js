@@ -52,41 +52,53 @@ $(document).ready(function(e){
 	    $(".MahasiswaEksperimen").hide();
 	});
 
-	//Buat identitas user, dengan id "andaAdalah--------------
+	//Buat identitas user, dengan id "andaAdalah"---------------------------
 	$("#andaAdalah")
 	  .change(function(e) {
 
 	  	e.preventDefault();
 	  	var identitas = $(this).val();
+	  	var flag = true;
 		$(".attention").hide();
 		$(".dariIPB, .dariARLAB, .dariNonIPB").hide();
 		$(".MahasiswaEksperimen").hide();
+		
 
 	  	$( "select option:selected" ).each(function() {
 
 	  		if (identitas != null) {
-	  			$(".attention").show();	
-	  			hasBeenClicked();
+	  			$(".attention").show();
+
+				if (identitas == 1 || identitas == 2) {
+	      			$(".dariIPB").show();
+	      		}
+
+	      		else if (identitas == 3) {
+	      			$(".dariARLAB").show();
+	      		}
+
+	      		else if (identitas == 4 || identitas == 5) {
+	      			$(".dariNonIPB").show();
+	      		}
+
 	  		}
 
-      		if (identitas == 1 || identitas == 2) {
-      			$(".dariIPB").show();
-      		}
+	  		//Trigger untuk show catatan eksperimen mahasiswa-------
+      		untukEksperimenMahasiswa(); 
 
-      		else if (identitas == 3) {
-      			$(".dariARLAB").show();
-      		}
+    	});
 
-      		else if (identitas == 4 || identitas == 5) {
-      			$(".dariNonIPB").show();
-      		}
+	  	//Trigger untuk ganti style kolom "Ajukan Disini"-----------
+    	if (identitas >= 1 && identitas <= 5) { hasBeenClicked(flag); }
 
-      		untukEksperimenMahasiswa();
-
+    	//Tidak mengaktifkan behavior scroll pada "Ajukan Disini"---
+    	$(window).scroll(function(event) {
+    		event.stopImmediatePropagation();
     	});
 
 	  })
 	  .trigger( "change" );
+
 
 
 	//Pilihan layanan di bawah "Anda Adalah" -------------------------
@@ -112,7 +124,7 @@ $(document).ready(function(e){
 	  .trigger( "change" );
 
 
-	 //Trigger untuk catatan eksperimen mahasiswa--------------------
+	 //Function untuk show catatan eksperimen mahasiswa--------------------
 	 function untukEksperimenMahasiswa() {
 	 	var eksperimen = $(".tatacaraEksperimen").is(":visible");
 	 	var identitas = $("#andaAdalah").val();
@@ -125,13 +137,39 @@ $(document).ready(function(e){
 	 	}
 	 }
 
-	function hasBeenClicked() {
-		$("html, body").animate({ scrollTop: 0 }, "slow");
-	 	$("#ajukanDisini").css( {
-	 		"position": "relative",
-	 		"right": "0"
-	 	});
-	 }
+	//Function untuk ganti style "Ajukan Disini"-----------------------------
+	function hasBeenClicked(flag) 
+	{
+		if (flag)
+		{
+			$("#ajukanDisini").css( {
+		 		"position": "relative",
+		 		"right":"0"
+		 	});
+
+		 	//Scroll ke halaman paling atas------------------
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+		}
+		flag = false;
+		return flag;
+	}
+
+ 	//Behavior kolom "Ajukan Disini" saat scrolling -------------------------
+	$(window).scroll(function() {
+	   if( $(window).scrollTop() >= 810 )
+	   {
+			$("#ajukanDisini").css( {
+		 		"position": "absolute",
+		 		"bottom":"0"
+		 	});
+	   }else{
+	   		$("#ajukanDisini").css( {
+		 		"position": "fixed",
+		 		"bottom":"auto"
+		 	});
+	   }
+
+	});
 
 
 	 //Buat index.html, saat klik button "Ajukan Layanan"-------------
