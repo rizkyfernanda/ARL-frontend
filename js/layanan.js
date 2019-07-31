@@ -88,13 +88,11 @@ $(document).ready(function(e){
 
     	});
 
-	  	//Trigger untuk ganti style kolom "Ajukan Disini"-----------
-    	if (identitas >= 1 && identitas <= 5) { hasBeenClicked(flag); }
+	  	//Trigger untuk ganti style kolom "Ajukan Disini"---------------
+    	if (identitas >= 1 && identitas <= 5) { 
+    		hasBeenClicked(flag); 
+    	}
 
-    	//Tidak mengaktifkan behavior scroll pada "Ajukan Disini"---
-    	$(window).scroll(function(event) {
-    		event.stopImmediatePropagation();
-    	});
 
 	  })
 	  .trigger( "change" );
@@ -150,25 +148,26 @@ $(document).ready(function(e){
 		 	//Scroll ke halaman paling atas------------------
 			$("html, body").animate({ scrollTop: 0 }, "slow");
 		}
-		flag = false;
-		return flag;
 	}
 
  	//Behavior kolom "Ajukan Disini" saat scrolling -------------------------
 	$(window).scroll(function() {
-	   if( $(window).scrollTop() >= 810 )
-	   {
-			$("#ajukanDisini").css( {
-		 		"position": "absolute",
-		 		"bottom":"0"
-		 	});
-	   }else{
-	   		$("#ajukanDisini").css( {
-		 		"position": "fixed",
-		 		"bottom":"auto"
-		 	});
-	   }
+	   if ( $(".attention").is(':visible') == false) {
 
+		   if( $(window).scrollTop() >= 810 )
+		   {
+				$("#ajukanDisini").css( {
+			 		"position": "absolute",
+			 		"bottom":"0"
+			 	});
+		   }else{
+		   		$("#ajukanDisini").css( {
+			 		"position": "fixed",
+			 		"bottom":"auto"
+			 	});
+		   }
+		   
+		}
 	});
 
 
