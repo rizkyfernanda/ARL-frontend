@@ -34,12 +34,20 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top" id="navbar-home">
-	  <a href="index.html">
-		 <span class="pr-2"><img class="navbar-brand-icon align-middle" src="pics/ipb-icon.png"></span>
-		 <span class="navbar-brand align-middle">LABORATORIUM RISET UNGGULAN IPB</span>
+
+      <a href="index.html">
+		<span class="pr-2"><img class="navbar-brand-icon align-middle" src="pics/ipb-icon.png"></span>
+		<span class="navbar-brand align-middle">LABORATORIUM RISET UNGGULAN IPB</span>
       </a>
-	  
-      <div class="collapse navbar-collapse py-0">
+
+	  <!-- Collapse button -->
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+	  	
+	  		<span><img class="navbar-brand-icon align-middle" src="pics/nav-hamburger.png"></span>
+
+	  </button>
+
+      <div class="collBapse navbar-collapse py-0">
         <ul class="ml-auto navbar-nav py-0">
 		  
 		  
@@ -104,24 +112,25 @@
 			
         </ul>
       </div>
+
   </nav>
 	
 <div class="container-fluid">
-  <div class="row header">
-		<div id="carouselExampleSlidesOnly" class="carousel slide w-100 vh-100" data-ride="carousel">
-			  <div class="carousel-inner w-100 vh-100">
+  <div class="row header d-flex">
+		<div id="carouselExampleSlidesOnly" class="carousel slide w-100" data-ride="carousel">
+			  <div class="carousel-inner">
 				<div class="carousel-item active">
-				  <img class="d-block w-100" src="http://placehold.it/1920x1080" alt="First slide">
+				  <img class="d-block w-100 h-auto" src="http://placehold.it/1920x1080" alt="First slide">
 				</div>
-				<div class="carousel-item vh-100">
-				  <img class="d-block w-100" src="http://placehold.it/1280x720" alt="Second slide">
+				<div class="carousel-item">
+				  <img class="d-block w-100 h-auto" src="http://placehold.it/1280x720" alt="Second slide">
 				</div>
-				<div class="carousel-item vh-100">
-				  <img class="d-block w-100" src="http://placehold.it/853x480" alt="Third slide">
+				<div class="carousel-item">
+				  <img class="d-block w-100 h-auto" src="http://placehold.it/853x480" alt="Third slide">
 				</div>
 			  </div>
 	    </div>
-		<div class="main-text hidden-xs h-10 mb-0">
+		<div class="main-text mb-0">
                 <div class="text-right">
 					<h3 class="header-font animated fadeInUp">
 						Laboratorium Riset Unggulan
@@ -146,23 +155,24 @@
 					<p>KIik untuk mengajukan kegiatan eksperimen dengan mengunjungi laboratorioum kami. </p>
 					<button type="button" id="eksperimen" class="btn btn-layanan btn-light mt-3" data-aos="fade-up">Ajukan Layanan</button>
 		  </div>
-			  <div class="col-lg-5 col-sm-4 col-xs-4 col-xl-4 pl-0 my-auto">
-				  	<img class="eksperimen-icon my-auto" src="pics/icon-eksperimen.png">
+			  <div class="col-lg-5 col-sm-5 col-xs-5 offset-xl-0 col-xl-4 pl-0 d-flex flex-column">
+				  	<img class="eksperimen-icon my-auto img-fluid" src="pics/icon-eksperimen.png">
 			  </div>
 		</div>
 </div>
 		
 	    <div class="col-lg-6 col-sm-12 indexAnalisis">
 				
-			<div class="row my-auto">
-			  <div class="col-lg-7 col-sm-7 col-xs-7 pr-0 py-4 col-xl-8 pl-5">
-					<h2 class="p-0 font-weight-bolder">Layanan Analisis</h2>
-					<p>Kirimkan sampel Anda untuk kami analisa dengan teknologi riset kami.<br>
-			    </p>
-					<button type="button" id="analisis" class="btn btn-light btn-layanan  mt-3" data-aos="fade-up" data-aos-delay="200">Ajukan Layanan</button>
-			  </div>
-			  <div class="col-lg-5 col-sm-5 col-xs-5 offset-xl-0 col-xl-4 pl-0 my-auto">
-				  	<img class="analisis-icon my-auto" src="pics/icon-analisis.png">
+			 <div class="row my-auto h-100">
+				  <div class="col-lg-7 col-sm-7 col-xs-5 pl-5 pr-0 py-4 col-xl-8">
+						<h2 class="p-0 font-weight-bolder">Layanan Analisis</h2>
+						<p>Kirimkan sampel Anda untuk kami analisa dengan teknologi riset kami.<br>
+				    </p>
+						<button type="button" id="analisis" class="btn btn-light btn-layanan mt-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">Ajukan Layanan</button>
+				  </div>
+				  <div class="col-lg-5 col-sm-5 col-xs-5 offset-xl-0 col-xl-4 pl-0 d-flex flex-column">
+					  	<img class="analisis-icon my-auto img-fluid" src="pics/icon-analisis.png">
+				  </div>
 			  </div>
 		  </div>
 			
@@ -271,7 +281,7 @@
     </div>
 	  
     <div class="row isi-peralatan pt-3 pb-3">
-      <div class="col-md-5ths col-xs-6">
+      <div class="col-md-5ths col-xs-4">
 
 		  	<div class="card h-100">
               <img class="card-img-top" src="http://placehold.it/300x300" alt="">
@@ -283,7 +293,7 @@
 			</div>
       </div>
 		
-      <div class="col-md-5ths col-xs-6">
+      <div class="col-md-5ths col-xs-4">
         <div class="card h-100">
           <img class="card-img-top" src="http://placehold.it/300x300" alt="">
           <div class="card-body pb-0">
@@ -295,7 +305,7 @@
       </div>
 		
 		
-      <div class="col-md-5ths col-xs-6 portfolio-item">
+      <div class="col-md-5ths col-xs-4">
         <div class="card h-100">
          <img class="card-img-top" src="http://placehold.it/300x300" alt="">
           <div class="card-body pb-0">
@@ -307,7 +317,7 @@
       </div>
 		
 		
-      <div class="col-md-5ths col-xs-6">
+      <div class="col-md-5ths col-xs-4">
         <div class="card h-100">
           <img class="card-img-top" src="http://placehold.it/300x300" alt="">
           <div class="card-body pb-0">
@@ -319,7 +329,7 @@
       </div>
 		
 		
-	  <div class="col-md-5ths col-xs-6">
+	  <div class="col-md-5ths col-xs-4">
         <div class="card h-100">
           <img class="card-img-top" src="http://placehold.it/300x300" alt="">
           <div class="card-body pb-0">

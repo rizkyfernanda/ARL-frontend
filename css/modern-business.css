@@ -123,8 +123,8 @@ iframe {
 .main-text
 {
     position: absolute;
-	bottom: 2em;
-	right: 2em;
+	bottom: 15%;
+	right: 0;
 	
 	padding: 1em;
     color: #FFF;
@@ -259,6 +259,7 @@ iframe {
 }
 
 .nav-language {
+	display: block;
 	border-style: solid;
 	border-width: thin;
 	border-color: #CCCCCC;
@@ -395,7 +396,7 @@ iframe {
 
 .eksperimen-icon {
 	max-width:90%;
-	max-height:100%;
+	max-height:90%;
 }
 
 .analisis-icon {
@@ -614,17 +615,45 @@ td, th {
 	background-color: rgba(0,3,46,0.77);
 }
 
-/*--------------------------------------*/
-/*Buat Laboratorium*/
-.col-xs-5ths,
-.col-sm-5ths,
-.col-md-5ths,
-.col-lg-5ths {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+/* Responsive SM and XS */
+@media (max-width: 991.98px)
+{
+
+	body 
+	{
+		font-size: 150% !important;
+	}
+
+    .eksperimen-icon
+    {
+    	width: 40%;
+    	margin-right: auto;
+    	margin-left: auto;
+    }
+
+    .analisis-icon
+    {
+    	width: 40%;
+    	margin-right: auto;
+    	margin-left: auto;
+    }
+    }
+
+	.header 
+	{
+		position: relative;
+	}
+
+	.nav-language 
+	{
+		padding: 8px;
+	}
+
 }
+
+
+/*--------------------------------------*/
+/*Buat panjang column 1/5 dari page width*/
 
 .col-xs-5ths {
     width: 20%;
@@ -633,15 +662,21 @@ td, th {
 
 @media (min-width: 768px) {
     .col-sm-5ths {
-        width: 20%;
-        float: left;
+    width: 20%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;        
     }
 }
 
 @media (min-width: 992px) {
     .col-md-5ths {
-        width: 20%;
-        float: left;
+    position: relative;
+    min-height: 1px;
+    width: 20%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;       
     }
 }
 
@@ -649,12 +684,16 @@ td, th {
     .col-lg-5ths {
         width: 20%;
         float: left;
+            padding-right: 15px;
+    padding-left: 15px;
     }
 }
 
 @media (max-width: 768px) {
 	.col-sm-6, .col-xs-12 {
 		font-size: 500%;
+		    padding-right: 15px;
+    padding-left: 15px;
 	}
 }
 
