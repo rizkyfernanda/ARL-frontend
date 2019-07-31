@@ -65,7 +65,8 @@ $(document).ready(function(e){
 	  	$( "select option:selected" ).each(function() {
 
 	  		if (identitas != null) {
-	  			$(".attention").show();
+	  			$(".attention").show();	
+	  			hasBeenClicked();
 	  		}
 
       		if (identitas == 1 || identitas == 2) {
@@ -84,10 +85,9 @@ $(document).ready(function(e){
 
     	});
 
-	  	$("#test").text(identitas);
-
 	  })
 	  .trigger( "change" );
+
 
 	//Pilihan layanan di bawah "Anda Adalah" -------------------------
 	$("#pilihanLayanan")
@@ -124,6 +124,15 @@ $(document).ready(function(e){
 	 		$(".MahasiswaEksperimen").hide();
 	 	}
 	 }
+
+	function hasBeenClicked() {
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+	 	$("#ajukanDisini").css( {
+	 		"position": "relative",
+	 		"right": "0"
+	 	});
+	 }
+
 
 	 //Buat index.html, saat klik button "Ajukan Layanan"-------------
 	 $("#eksperimen.btn-layanan").click(function() {
