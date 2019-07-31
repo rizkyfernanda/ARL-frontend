@@ -154,7 +154,7 @@ $(document).ready(function(e){
 	$(window).scroll(function() {
 	   if ( $(".attention").is(':visible') == false) {
 
-		   if( $(window).scrollTop() >= 810 )
+		   if( $(window).scrollTop() >= 710 )
 		   {
 				$("#ajukanDisini").css( {
 			 		"position": "absolute",
@@ -166,7 +166,7 @@ $(document).ready(function(e){
 			 		"bottom":"auto"
 			 	});
 		   }
-		   
+
 		}
 	});
 
