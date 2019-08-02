@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Berita - Laboratorium Riset Unggulan IPB</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-horizon.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+	
+  <!-- Animation styles -->
+  <link href="css/animation.css" rel="stylesheet">
+  
+  <!--Custom Javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/labRiset.js"></script>
+   
+  <style>
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <div class="fixed-top navbar-expand-lg">
+	 <nav class="navbar" id="navbar-home">
+		  <a href="index.html">
+			 <span class="pr-2"><img class="navbar-brand-icon align-middle" src="pics/ipb-icon.png"></span>
+			 <span class="navbar-brand align-middle">LABORATORIUM RISET UNGGULAN IPB</span>
+		  </a>
+
+		 <div class="collapse navbar-collapse py-0">
+			<ul class="ml-auto navbar-nav py-0">
+
+
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html">Home
+				</a>
+			  </li>
+
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Profil
+				</a>
+					<div class="dropdown-menu dropdown-menu-right fadeInDown" aria-labelledby="navbarDropdownPortfolio">
+					  <a class="dropdown-item" href="portfolio-1-col.html">Stuktur Organisasi</a>
+					  <a class="dropdown-item" href="portfolio-2-col.html">Tentang Kami</a>
+				</div>
+			  </li>
+
+			  <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lab Kami 
+				  </a>
+				  
+	            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+	              <a class="dropdown-item active" href="lab.html">Laboratorium Sains Molekuler</a>
+	              <a class="dropdown-item" href="lab.html">Laboratorium Metabolomik</a>
+				  <a class="dropdown-item" href="lab.html">Laboratorium Nano Imaging</a>
+	              <a class="dropdown-item" href="lab.html">Laboratorium Environmental Monitoring</a>
+				  <a class="dropdown-item" href="lab.html">Laboratorium Kultur Sel Hewan</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item font-weight-bolder" href="peralatanKami.html">Peralatan Kami</a>
+	            </div>
+
+			  </li>
+
+			  <li class="nav-item">
+				  <a class="nav-link" href="services.html">Galeri
+				  </a>
+			  </li>
+
+			  <li class="nav-item">
+				  <a class="nav-link" href="layanan.html">Layanan
+				  </a>
+			  </li>
+
+			  <li class="nav-item"> 
+				  <a class="nav-link" href="contact.html">Kontak
+				  </a>
+			  </li>
+
+
+			  <li class="nav-item dropdown p-0"><a class="nav-link dropdown-toggle nav-language" href="#" id="navbarDropdownPortfolio2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ID</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+
+
+					<a class="dropdown-item px-3" href="portfolio-1-col.html" data_temp_dwid="1">
+						<img class="d-inline align-middle" src="pics/idn.png">
+						<div class="d-inline align-middle"> &nbsp; Bahasa Indonesia</div>
+					</a>
+
+					<a class="dropdown-item px-3" href="portfolio-1-col.html" data_temp_dwid="1">
+						<img class="d-inline align-middle" src="pics/us.png">
+						<div class="d-inline align-middle"> &nbsp; English (US)</div>
+					</a>
+				</div>
+			  </li>
+
+			</ul>
+		  </div>
+	 </nav>
+  </div>
+	
+  <!-- Page Content -->
+  <div class="container-fluid p-5 min-vh-50">
+
+		<!-- Modal content, success-->
+		<div id="send-success" class="modal-content w-25 alert mx-auto animated fadeIn" data-keyboard="false" data-backdrop="static">
+		  <div class="modal-header">
+			<h4 class="modal-title text-center">Sukses!</h4>
+		  </div>
+
+		  <div class="modal-body">
+			<p>Silakan menunggu balasan Email dari kami untuk proses lebih lanjut.</p>
+		  </div>
+
+		  <div class="modal-footer">
+			<button id="toHome" type="button" class="btn btn-primary w-100" onclick="window.location.href='index.html'">Kembali ke beranda</button>
+		  </div>
+		</div>
+	  
+  </div>
+  <!-- /.Page Content -->
+
+  <!-- Footer -->
+	<footer class="page-footer font-small mdb-color lighten-3">
+
+	  <!-- Footer Links -->
+	  <div class="container text-center text-md-left pb-5">
+
+		<!-- Grid row -->
+		<div class="row pb-4">
+
+		  <!-- Grid column -->
+		  <div class="col-md-6 mr-auto col-lg-4 col-sm-6 col-xs-12 my-4 pr-5">
+
+			<!-- Content -->
+			  
+			<!-- Tombol Hubungi Kami -->
+			<button class= "btn btn-light mb-4 hubungi-kami">
+				<a href="contact.html">
+					<img class="d-inline align-middle" src="pics/layanan-icon.png">
+					<div class="d-inline align-middle">Hubungi Kami</div>
+				</a>
+			</button>
+			  
+			  <ul class="list-unstyled font-weight-light">
+			  <li>
+			    <p><img class="lab-riset-unggulan" src="pics/lab-riset-unggulan.png"></p>
+			  </li>
+			  <li>
+			    <p>Email: advanced-lab@apps.ipb.ac.id</p>
+			  </li>
+			  <li>
+			    <p>Jalan Palem Kampus IPB Dramaga, Bogor</p>
+			  </li>
+			  <li>
+			    <p>Kode Pos: 16680</p>
+			  </li>
+			  <li>
+				<img class="icon" src="pics/Instagram.png">
+				<a class="d-inline align-middle footer-tautan font-weight-bold" href="https://instagram.com/advancedresearchlab">@advancedresearchlab</a>
+			  </li>
+			</ul>
+		  </div>
+		  <!-- Grid column -->
+
+		  <hr class="clearfix w-100 d-md-none">
+
+		  <!-- Grid column -->
+		  <div class="col-md-6 mx-auto my-md-4 my-0 mt-4 mb-1 pr-5 col-lg-3 offset-xl-0 col-xl-3 col-sm-6 col-xs-12">
+
+			<!-- Links -->
+			<h5 class="font-weight-bolder text-justify col-sm-6 col-xs-6 mb-4 py-2 px-0">Tautan</h5>
+			<ul class="list-unstyled font-weight-light">
+			  <li>
+			    <p><a class="footer-tautan" href="http://ipb.ac.id">IPB</a></p>
+			  </li>
+			  <li>
+			    <p> <a class="footer-tautan" href="http://lppm.ipb.ac.id/">Lembaga Penelitian dan Pengembangan Masyarakat - IPB</a></p>
+			  </li>
+			</ul>
+
+		  </div>
+		  <!-- Grid column -->
+
+		  <hr class="clearfix w-100 d-md-none">
+
+		  <!-- Grid column -->
+		  <!-- Grid column -->
+
+		  <hr class="clearfix w-100 d-md-none">
+
+		  <!-- Grid column -->
+		  <div class="col-md-12 text-center mx-auto col-sm-12 col-xs-12 my-4 offset-lg-0 col-lg-5">
+
+			<!-- Social buttons -->
+			<h5 class="font-weight-bolder text-justify mb-4 py-2">Lokasi Kami</h5>
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15854.932604882319!2d106.72330478255614!3d-6.555333609495297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c4b294aba49d%3A0x533530000f77bc38!2sBogor+Agricultural+University!5e0!3m2!1sen!2sid!4v1562741366233!5m2!1sen!2sid" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		  </div>
+		  <!-- Grid column -->
+
+		</div>
+		<!-- Grid row -->
+
+	  </div>
+	  <!-- Footer Links -->
+
+	  <!-- Copyright -->
+	  <div class="footer-copyright py-3 no-gutters font-weight-light card-text">© IPB AR L AB - 2019. All rights reserved.<br>
+	  </div>
+	  <!-- Copyright -->
+
+</footer>
+  <!-- Footer -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+  <script>
+    $(document).ready(function(){
+
+      //Untuk format tanggal mulai dan tanggal selesai ----------------------------------------------------
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'dd/mm/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+
+      $('.custom-file-input').on('change',function(){
+                //get the file name
+                var fileName = $(this).get(0).files.item(0).name;
+                //replace the "Choose a file" label
+                $(this).next('.custom-file-label').text(fileName);
+      });
+
+      //Konfirmasi untuk menghentikan form dengan meng klik link lain pada page ---------------------------------
+      $( "a" )
+	     .click(function(e) {
+
+	     	 var link = $( this ).attr('href');  // alamat link yang diklik
+	     	 var id   = $( this ).attr('id');    // id link
+	     	 
+	     	 $("textarea, input").each(function() {
+	     	 	var text_value= $(this).val();
+
+	     	 	// Jika textarea atau input terisi, dan yang diklik bukan terms and conditions
+				if ( text_value != '' && text_value != "check" && id != "termsAndCondition") {
+	             e.preventDefault();
+
+	             // Buka Konfirmasi
+		         $('#cancelModal').modal('show');
+
+		         $("#cancelOk").click(function() {
+		         	window.location.href = link;
+		         });
+		        }
+
+			});
+
+	     });
+
+	 });
+
+</script>
+
+</body>
+
+</html>
