@@ -65,6 +65,11 @@ form {
 	bottom: auto;
 }
 
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 .breadcrumb-item {
 	font-weight: 670;
 	margin: 0px;
@@ -122,12 +127,9 @@ iframe {
 
 .main-text
 {
-    position: absolute;
-	bottom: 15%;
-	right: 0;
-	
-	padding: 1em;
+	bottom: 0;
     color: #FFF;
+    font-size: 80%;
 }
 
 .kontak-info {
@@ -477,8 +479,6 @@ iframe {
 	margin-top: 3%;
 	background-color:rgba(0,3,46,0.9);
 	color: white;
-    padding-left: 0px;
-	padding-right: 0px;
 }
 
 .footer-copyright {
@@ -619,24 +619,41 @@ td, th {
 @media (max-width: 991.98px)
 {
 
-	body 
+	a, p, h1, h2, h3, h4, h5, div, nav
 	{
+		font-size: 108% !important;
+	}
+
+	h2
+	{
+		font-size: 170% !important;
+	}
+
+	#container-home
+	{
+		position: relative;
+		top: 20% !important;
+	}
+
+	.main-text
+	{
+		bottom: 0;
+		right: 0;
 		font-size: 150% !important;
 	}
 
     .eksperimen-icon
     {
-    	width: 40%;
+    	width: 60%;
     	margin-right: auto;
     	margin-left: auto;
     }
 
     .analisis-icon
     {
-    	width: 40%;
+    	width: 60%;
     	margin-right: auto;
     	margin-left: auto;
-    }
     }
 
 	.header 
@@ -644,19 +661,116 @@ td, th {
 		position: relative;
 	}
 
+	.headings
+	{
+		font-size: 170% !important;
+	}
+
 	.nav-language 
 	{
 		padding: 8px;
+		border-style: none;
 	}
 
+	.navbar-brand {
+		font-size: 180%;
+	}
+
+	.dropdown-item 
+	{
+		font-size: 150% !important;
+	}
+
+	.nav-link
+	{
+		font-size: 170% !important;
+		padding-top: 0.5em;
+	}
+
+	.indexAnalisis, .indexEksperimen
+	{
+		font-size: 150%;
+	}
+
+	.btn-layanan
+	{
+		font-size: 120%;
+	}
+
+	.analisis-icon, .eksperimen-icon
+	{
+		max-width: 100%;
+		top: 0;
+		bottom: 0;
+	}
+
+	.card-body
+	{
+		font-size: 130% !important;
+	}
+
+	.card
+	{
+		margin: 0.7em;
+	}
+
+	.kegiatan
+	{
+		padding: 1em;
+		font-size: 140% !important;
+	}
+
+	.owl-carousel
+	{
+		font-size: 80% !important;
+	}
+
+	.page-footer
+	{
+		font-size: 130% !important;
+		padding-top: 2em;
+	}
+
+	#ajukanDisini
+	{
+		position: relative !important;
+	}
+
+	.selengkapnya
+	{
+		font-size: 140% !important;
+	}
 }
 
+@media (max-width: 1024px)
+{
+	#container-home
+	{
+		position: relative;
+		top: 25% !important;
+	}
+
+	.navbar-brand
+	{
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 1280px)
+{
+	#container-home
+	{
+		position: relative;
+		top: 60% !important;
+	}
+}
 
 /*--------------------------------------*/
 /*Buat panjang column 1/5 dari page width*/
 
-.col-xs-5ths {
-    width: 20%;
+.col-md-5ths,
+.col-xs-5ths  {
+    width: 20% !important;
     float: left;
 }
 
@@ -671,9 +785,8 @@ td, th {
 
 @media (min-width: 992px) {
     .col-md-5ths {
-    position: relative;
     min-height: 1px;
-    width: 20%;
+    flex: 0 0 20% !important;
     float: left;
     padding-right: 15px;
     padding-left: 15px;       
