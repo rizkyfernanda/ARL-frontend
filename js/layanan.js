@@ -1,7 +1,9 @@
 $(document).ready(function(e){
 
+	var bool = false;
+	scrolling(bool);
 
-	//Untuk mengajukan disamping. Pilihan default: "Anda Adalah"
+	//Untuk mengajukan disamping. Pilihan default: "Anda Adalah" dan pilihan layanan kosong
 	$("#andaAdalah").val(0);
 	$("#pilihanLayanan").val(0);
 
@@ -21,6 +23,7 @@ $(document).ready(function(e){
 		$("#tatacara").show();
 		$("#ajukanDisini").show();
 		$(this).css("opacity", "1.0");
+		scrolling(true);
 	});
 
 	//Buat tombol Eksperimen-------------
@@ -90,7 +93,8 @@ $(document).ready(function(e){
 
 	  	//Trigger untuk ganti style kolom "Ajukan Disini"---------------
     	if (identitas >= 1 && identitas <= 5) { 
-    		hasBeenClicked(flag); 
+    		hasBeenClicked(flag);
+    		bool = false;
     	}
 
 
@@ -151,25 +155,30 @@ $(document).ready(function(e){
 	}
 
  	//Behavior kolom "Ajukan Disini" saat scrolling -------------------------
-	$(window).scroll(function() {
-	   if ( $(".attention").is(':visible') == false) {
+ 	function scrolling(bool)
+ 	{
+ 	if (bool == true)
+ 		{
+			$(window).scroll(function() {
+			   if ( $(".attention").is(':visible') == false) {
 
-		   if( $(window).scrollTop() >= 710 )
-		   {
-				$("#ajukanDisini").css( {
-			 		"position": "absolute",
-			 		"bottom":"0"
-			 	});
-		   }else{
-		   		$("#ajukanDisini").css( {
-			 		"position": "fixed",
-			 		"bottom":"auto"
-			 	});
-		   }
+				   if( $(window).scrollTop() >= 710 )
+				   {
+						$("#ajukanDisini").css( {
+					 		"position": "absolute",
+					 		"bottom":"0"
+					 	});
+				   }else{
+				   		$("#ajukanDisini").css( {
+					 		"position": "fixed",
+					 		"bottom":"auto"
+					 	});
+				   }
 
+				}
+			});
 		}
-	});
-
+	}
 
 	 //Buat index.html, saat klik button "Ajukan Layanan"-------------
 	 $("#eksperimen.btn-layanan").click(function() {
