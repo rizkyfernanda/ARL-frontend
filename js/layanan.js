@@ -1,4 +1,4 @@
-$(document).ready(function(e){
+$(document).ready(function(){
 
 	var bool = false;
 	scrolling(bool);
@@ -13,7 +13,6 @@ $(document).ready(function(e){
 	$("#tatacara").hide();							//header "Tata Cara"
 	$("#ajukanDisini").hide();						//sidebar "Ajukan Disini"
 
-	$(".attention").hide();							//Catatan dibawah login, pakai border merah
 	$(".dariIPB, .dariARLAB, .dariNonIPB").hide();	
 	$(".MahasiswaEksperimen").hide();				//Catatan jika layanan eksperimen mahasiswa hanya bisa untuk s2&s3
 
@@ -62,7 +61,6 @@ $(document).ready(function(e){
 	  	e.preventDefault();
 	  	var identitas = $(this).val();
 	  	var flag = true;
-		$(".attention").hide();
 		$(".dariIPB, .dariARLAB, .dariNonIPB").hide();
 		$(".MahasiswaEksperimen").hide();
 		
@@ -70,7 +68,6 @@ $(document).ready(function(e){
 	  	$( "select option:selected" ).each(function() {
 
 	  		if (identitas != null) {
-	  			$(".attention").show();
 
 				if (identitas == 1 || identitas == 2) {
 	      			$(".dariIPB").show();
@@ -95,32 +92,9 @@ $(document).ready(function(e){
     	if (identitas >= 1 && identitas <= 5) { 
     		hasBeenClicked(flag);
     		bool = false;
+    		scrolling(bool);
     	}
 
-
-	  })
-	  .trigger( "change" );
-
-
-
-	//Pilihan layanan di bawah "Anda Adalah" -------------------------
-	$("#pilihanLayanan")
-	  .change(function(e) {
-
-	  	e.preventDefault;
-	  	var pilihan = $(this).val();
-	  	var selected = $( "#pilihanLayanan option:selected" );
-	  	selected.each(function() {
-
-	  		if (pilihan == 1) {
-	  			$('#eksperimen').trigger('click');
-	  		}
-
-	  		else if (pilihan == 2) {
-	  			$('#analisis').trigger('click');
-	  		}
-
-    	});
 
 	  })
 	  .trigger( "change" );
@@ -160,7 +134,7 @@ $(document).ready(function(e){
  	if (bool == true)
  		{
 			$(window).scroll(function() {
-			   if ( $(".attention").is(':visible') == false) {
+			   if ( $(".dariIPB, .dariNonIPB").is(':visible') == false ) {
 
 				   if( $(window).scrollTop() >= 710 )
 				   {
@@ -179,36 +153,5 @@ $(document).ready(function(e){
 			});
 		}
 	}
-
-	 //Buat index.html, saat klik button "Ajukan Layanan"-------------
-	 $("#eksperimen.btn-layanan").click(function() {
-		window.location='services.html?eksperimen=true';
-	    e.preventDefault();
-
-	 });
-
-	 $("#analisis.btn-layanan").click(function() {
-		window.location='services.html?analisis=true';
-	    e.preventDefault();
-	 });
-
-
-	 if(getParameterByName('eksperimen') == 'true')
-	 {
-	    $('#eksperimen').trigger('click');
-	 
-	 }else if(getParameterByName('analisis') == 'true'){
-
-	    $('#analisis').trigger('click');
-	 }
-
-
-	 function getParameterByName(name) 
-	 {
-	    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-	    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-	        results = regex.exec(location.search);
-	    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-	 }
 
 });
